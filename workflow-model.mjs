@@ -1,8 +1,8 @@
 export function contentDraft(b){const topic=b.keyword,promise=b.promise,audience=b.audience;return [
- {channel:'릴스 ,  첫 발견',message:promise,structure:`첫 장면: ${topic}을 직접 보여주는 장면 → 나의 관점 → ${promise}`,question:`${topic}에서 여러분은 어떤 장면을 발견했나요?`,measure:'메시지 이해 응답, 실제 공유 자료가 있다면 확인',note:'사진은 원본 구도를 유지하고 영상 화면 안에 배치하세요. 음원, 길이, 게시 횟수는 성과 자료 없이 정답으로 지정하지 않습니다.'},
- {channel:'피드 ,  저장과 설명',message:promise,structure:`1장: ${topic}과 브랜드 한 문장 → 2~3장: 직접 만든 장면과 경험 → 마지막: ${audience}에게 남길 질문`,question:`이 이야기를 떠올리게 하는 사람은 누구인가요?`,measure:'브랜드 기억 응답, 저장/공유 통계가 있으면 확인',note:'사진 비율과 색을 보존하세요. 제목과 설명은 첫 사진의 약속과 연결하세요.'},
- {channel:'스토리 ,  참여와 다음 방문',message:promise,structure:`${topic}에 대한 두 관점이나 장면 제시 → 선택 질문 → 다음 이야기 예고`,question:`다음에는 어떤 장면을 함께 보고 싶으세요?`,measure:'선택, 질문 응답과 다시 찾을 이유',note:'응답 결과를 다음 편의 질문에 반영하세요. 게시 주기는 제작 가능한 범위에서 시험하세요.'},
- {channel:'블로그 ,  맥락과 근거',message:promise,structure:`${audience}의 상황을 담은 제목 → ${b.context} → 직접 경험과 출처 → ${promise}`,question:`비슷한 경험이 있다면 어떤 점이 달랐나요?`,measure:'메시지 이해, 브랜드 기억 응답',note:'문화, 공간, 경제 소재의 사실과 자신의 해석을 구분하세요.'}
+ {channel:'릴스, 첫 발견',message:promise,structure:`첫 장면: ${topic}을 직접 보여주는 장면 → 나의 관점 → ${promise}`,question:`${topic}에서 여러분은 어떤 장면을 발견했나요?`,measure:'메시지 이해 응답, 실제 공유 자료가 있다면 확인',note:'사진은 원본 구도를 유지하고 영상 화면 안에 배치하세요. 음원, 길이, 게시 횟수는 성과 자료 없이 정답으로 지정하지 않습니다.'},
+ {channel:'피드, 저장과 설명',message:promise,structure:`1장: ${topic}과 브랜드 한 문장 → 2~3장: 직접 만든 장면과 경험 → 마지막: ${audience}에게 남길 질문`,question:`이 이야기를 떠올리게 하는 사람은 누구인가요?`,measure:'브랜드 기억 응답, 저장/공유 통계가 있으면 확인',note:'사진 비율과 색을 보존하세요. 제목과 설명은 첫 사진의 약속과 연결하세요.'},
+ {channel:'스토리, 참여와 다음 방문',message:promise,structure:`${topic}에 대한 두 관점이나 장면 제시 → 선택 질문 → 다음 이야기 예고`,question:`다음에는 어떤 장면을 함께 보고 싶으세요?`,measure:'선택, 질문 응답과 다시 찾을 이유',note:'응답 결과를 다음 편의 질문에 반영하세요. 게시 주기는 제작 가능한 범위에서 시험하세요.'},
+ {channel:'블로그, 맥락과 근거',message:promise,structure:`${audience}의 상황을 담은 제목 → ${b.context} → 직접 경험과 출처 → ${promise}`,question:`비슷한 경험이 있다면 어떤 점이 달랐나요?`,measure:'메시지 이해, 브랜드 기억 응답',note:'문화, 공간, 경제 소재의 사실과 자신의 해석을 구분하세요.'}
  ];}
 export function responseStats(rows){return {total:rows.length,preview:rows.filter(r=>r.mode==='preview').length,published:rows.filter(r=>r.mode==='published').length,matched:rows.filter(r=>r.match==='yes').length};}
 export function validateResponse(r,rows,today){if(!r.person||!r.understanding||!r.share||!r.memory||!r.returnReason||!r.evidence)throw Error('실제로 받은 응답과 근거를 모두 적어 주세요.');if(!r.date||r.date>today)throw Error('응답 날짜는 오늘까지 입력하세요.');if(rows.some(x=>x.person===r.person))throw Error('이 기획에 같은 응답자 구분이 있습니다. 중복 집계를 피하려면 다른 응답을 확인하세요.');}
