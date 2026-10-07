@@ -18,10 +18,4 @@ export function publicEvidence(a){
  {label:'이미지와 영상 내용',value:'확인하지 못함'},
  {label:'조회, 좋아요, 공유, 저장, 팔로우',value:'확인하지 못함'}];
 }
-export function nextContent(a,topic){
- const posts=a.posts||[],p=posts.find(p=>p.title),hasTopic=topic&&topic!=='내 브랜드';
- if(p)return {basis:`공개 글 ${posts.length}개 중 "${p.title}"에서 이어갈 소재를 골랐습니다. 반응 수치는 확인하지 못함.`,title:`${p.title}에서 못다 한 이야기`,outline:'해당 글의 한 가지 질문을 고르고, 직접 경험한 장면과 구체적인 답을 이어지는 글로 작성하세요. 앞 글의 원문을 연결해 독자가 맥락을 확인할 수 있게 하세요.',question:'이 주제에서 다음으로 알고 싶은 것은 무엇인가요?'};
- if(!hasTopic)return {basis:'게시물과 주제를 확인하지 못했습니다. 아래는 계정 분석 결과가 아닌 시작용 제안입니다.',title:'이 계정에서 앞으로 전할 이야기',outline:'직접 다룰 주제와 본인의 관점을 한 문장으로 소개하고, 대표 경험 하나를 보여주세요. 선택 소개를 추가하면 주제에 맞는 제안을 받을 수 있습니다.',question:'다음 글이나 영상에서 어떤 이야기를 보고 싶으신가요?'};
- const photo=/사진|색감|풍경/.test(topic);
- return {basis:`주제 "${topic}"를 기준으로 작성한 초안입니다. 개별 게시물 반응은 확인하지 못함.`,title:photo?'같은 길에서 발견한 서로 다른 색':`${topic}에서 자주 놓치는 한 가지`,outline:photo?'한 장소에서 발견한 색을 원본 비율의 사진 세 장으로 보여주세요. 마지막 장에는 실제 촬영 경험과 다음에 찾아볼 장소를 짧게 적어 주세요.':'주제와 관련된 생활 속 질문 하나를 고르고, 직접 확인한 경험과 근거를 순서대로 보여주세요.',question:photo?'이 색을 보면 어떤 장소가 떠오르세요?':'여러분은 어떤 경험을 하셨나요?'};
-}
+export {contentDecision as nextContent} from './recommendation-engine.mjs';
