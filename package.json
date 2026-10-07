@@ -1,0 +1,14 @@
+{
+  "name": "perjim",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SNS 공개 콘텐츠 분석과 다음 콘텐츠 추천",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
