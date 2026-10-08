@@ -24,6 +24,7 @@
 | 문서 | 내용 |
 | --- | --- |
 | [USER-MESSAGE-CHECK-2026-10-08-v01.md](USER-MESSAGE-CHECK-2026-10-08-v01.md) | 익명 5명의 메시지 A/B 선택, 정성 의견, 다음 테스트 문장 |
+| [SECOND-MESSAGE-CHECK-2026-10-08-v01.md](SECOND-MESSAGE-CHECK-2026-10-08-v01.md) | 2차 문장의 참여 화면과 판단 기준. 실제 응답은 아직 없음 |
 
 ## 참고 파일
 
