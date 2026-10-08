@@ -4,7 +4,7 @@
 
 토스 Brand Marketing Specialist 직무를 목표로 만든 개인 포트폴리오입니다. 공개 자료를 찾는 도구 제작부터 트렌드 해석, 브랜드 메시지, 매체별 콘텐츠, 외부 제휴안, VOC(고객 의견) 기반 수정까지 하나의 업무 흐름으로 연결했습니다.
 
-**[웹 포트폴리오 보기](https://jhheo51-arch.github.io/trend-to-trust/)** · **[통합 기획서](docs/PRD.md)** · **[사례와 근거](docs/CASE-STUDY.md)**
+**[웹 포트폴리오 보기](https://jhheo51-arch.github.io/trend-to-trust/)** · **[메시지 검증 화면](https://jhheo51-arch.github.io/trend-to-trust/message-check.html)** · **[통합 기획서](docs/PRD.md)** · **[사례와 근거](docs/CASE-STUDY.md)**
 
 ## 처음 오셨다면
 
@@ -13,7 +13,8 @@
 | 1. 전체 이야기 | [웹 포트폴리오](https://jhheo51-arch.github.io/trend-to-trust/)에서 공개 신호 → 브랜드 메시지 → 콘텐츠 수정의 흐름을 봅니다. 설치 없이 열 수 있습니다. |
 | 2. 판단 근거 | [사례 문서](docs/CASE-STUDY.md)에서 확인한 사실·캠페인 가설·가상 반응을 구분하고, [통합 기획서](docs/PRD.md)에서 선택 기준을 읽습니다. |
 | 3. 업무 도구 | [퍼짐 화면](https://jhheo51-arch.github.io/trend-to-trust/tool.html)을 봅니다. **공개 주소는 화면 확인용이며, 공개 자료 수집 기능은 로컬 실행이 필요합니다.** |
-| 4. 직접 실행 | 아래 [실행하기](#실행하기)에 따라 내 컴퓨터에서 퍼짐을 실행하고 자동 검사를 확인합니다. |
+| 4. 메시지 검증 | [메시지 검증 화면](https://jhheo51-arch.github.io/trend-to-trust/message-check.html)에서 P01~P05가 차례로 응답합니다. 응답은 사용 중인 브라우저에만 저장됩니다. |
+| 5. 직접 실행 | 아래 [실행하기](#실행하기)에 따라 내 컴퓨터에서 퍼짐을 실행하고 자동 검사를 확인합니다. |
 
 ### 화면 미리보기
 
@@ -130,6 +131,8 @@ npm test
 |---|---|
 | [index.html](index.html) | Trend to Trust 포트폴리오 |
 | [tool.html](tool.html) | 퍼짐 공개 신호 분석 도구 |
+| [message-check.html](message-check.html) | 실제 사용자 5명 메시지 검증 화면 |
+| [docs/PROJECT-ROADMAP-2026-10-08-v01.md](docs/PROJECT-ROADMAP-2026-10-08-v01.md) | 고도화 우선순위와 완료 기준 |
 | [case.html](case.html) | 토스 머니북 공개 자료 분석 사례 |
 | [docs/PRD.md](docs/PRD.md) | 통합 프로젝트의 목적·구조·검증 기준 |
 | [docs/CASE-STUDY.md](docs/CASE-STUDY.md) | 캠페인과 도구 사례의 근거 구분 |
