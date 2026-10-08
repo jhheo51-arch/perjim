@@ -8,7 +8,15 @@ const write = responses => localStorage.setItem(storageKey, JSON.stringify(respo
 
 document.querySelectorAll(".scale").forEach(container => {
   const name = container.dataset.name;
-  container.innerHTML = [1, 2, 3, 4, 5].map(value => `<label>${value}<input type="radio" name="${name}" value="${value}"></label>`).join("");
+  [1, 2, 3, 4, 5].forEach(value => {
+    const label = document.createElement("label");
+    const input = document.createElement("input");
+    input.type = "radio";
+    input.name = name;
+    input.value = String(value);
+    label.append(String(value), input);
+    container.append(label);
+  });
 });
 
 function render() {
