@@ -1,44 +1,28 @@
-# Trend to Trust 문서 안내
+# 문서 안내
 
-이 폴더에는 포트폴리오 화면에서 짧게 보여준 판단 근거와 제작 기준을 담았습니다. 읽는 목적에 따라 아래 순서로 확인하면 됩니다.
+현재 제출 자료와 이전 기록을 나눴습니다. 파일 이름에 남은 번호는 이전 공개 링크와 변경 이력을 보존하기 위한 것입니다. 본문에는 현재 제출 순서만 적었습니다.
 
-## 제출 검토용
+## 현재 제출 자료
 
-| 문서 | 내용 |
+| 자료 | 내용 |
 | --- | --- |
-| [Trend-to-Trust-Brand-Marketing-2026-10-09-v01.pdf](Trend-to-Trust-Brand-Marketing-2026-10-09-v01.pdf) | 공고별 역할·결과·한계를 3쪽으로 정리한 제출용 PDF |
-| [PRD.md](PRD.md) | 프로젝트가 해결하려는 문제, 대상, 화면과 검증 기준 |
-| [CASE-STUDY.md](CASE-STUDY.md) | 공개 신호, 캠페인 해석, 보조 도구의 역할을 구분한 사례 연구 |
-| [SUBMISSION-AUDIT-2026-10-09-v03.md](SUBMISSION-AUDIT-2026-10-09-v03.md) | 현재 공고에 맞춘 제출 범위·증거·남은 공백 |
-| [SUBMISSION-AUDIT-2026-10-09-v02.md](SUBMISSION-AUDIT-2026-10-09-v02.md) | 2차 검증 반영 후 제출 근거와 남아 있는 한계 |
-| [SUBMISSION-AUDIT-2026-10-08-v01.md](SUBMISSION-AUDIT-2026-10-08-v01.md) | 이전 제출 점검 기록 |
-| [PROJECT-ROADMAP-2026-10-08-v01.md](PROJECT-ROADMAP-2026-10-08-v01.md) | 고도화 순서와 각 단계의 완료 기준 |
+| [5쪽 포트폴리오 PDF](submission/Trend-to-Trust-Brand-Marketing-2026-10-09.pdf) | 조사, 캠페인, 완성 콘텐츠, 채널, 문장 수정 |
+| [조사와 기능 확인 엑셀](submission/Trend-to-Trust-Signal-Checks-2026-10-09.xlsx) | 퍼짐의 공개 자료 확인 범위와 기능 기록. 광고 성과 자료는 아님 |
+| [제출 적합성 점검](submission/Portfolio-Assessment-2026-10-09.md) | 퍼짐 단독 소개와 현재 포트폴리오의 차이, 남은 증거 |
+| [기획서](strategy/PRD.md) | 프로젝트 목적과 콘텐츠 흐름 |
+| [사례 연구](strategy/CASE-STUDY.md) | 확인한 사실과 캠페인 해석의 구분 |
+| [캠페인 제작 기준](strategy/CAMPAIGN-BRIEF-2026-10-09-v02.md) | 브랜드 목표와 표현 기준 |
 
-## 캠페인 제작용
+## 채널과 검증 자료
 
-현재 대표 화면은 [완성 카드 6장·원고 v03](../campaign-v03.html), [매체별 제작안 v02](../campaign-kit-v02.html), [어피티 제휴 제안 v02](../partner-proposal-v02.html)입니다. 이전 HTML 시안은 변경 이력으로 보존합니다.
-
-| 문서 | 내용 |
+| 자료 | 내용 |
 | --- | --- |
-| [CAMPAIGN-BRIEF-2026-10-09-v02.md](CAMPAIGN-BRIEF-2026-10-09-v02.md) | 현재 캠페인의 목적·역할·표현 경계·채널별 상태 |
-| [CAMPAIGN-BRIEF-2026-10-08-v01.md](CAMPAIGN-BRIEF-2026-10-08-v01.md) | 브랜드 목적, 콘텐츠 소재, 가상 사례의 사용 경계 |
-| [UPPITY-PROPOSAL-2026-10-08-v01.md](UPPITY-PROPOSAL-2026-10-08-v01.md) | 어피티 협업 제안의 가치, 형식, 실행 조건 |
-| [PARTNER-SHORTLIST-2026-10-08-v01.md](PARTNER-SHORTLIST-2026-10-08-v01.md) | 외부 파트너 후보 3곳 비교와 선택 기준 |
+| [파트너 후보 비교](strategy/PARTNER-SHORTLIST-2026-10-08-v01.md) | 어피티, 오늘의집, 캐릿을 고른 기준 |
+| [어피티 협업 분석](strategy/UPPITY-PROPOSAL-2026-10-08-v01.md) | 기존 콘텐츠와 겹치지 않게 제안할 부분과 협의 조건 |
+| [첫 문장 검증](validation/USER-MESSAGE-CHECK-2026-10-08-v01.md) | 익명 응답 5건과 첫 판단 |
+| [두 번째 검증 설계](validation/SECOND-MESSAGE-CHECK-2026-10-08-v01.md) | 질문과 비교 조건 |
+| [두 번째 검증 결과](validation/SECOND-MESSAGE-RESULT-2026-10-09-v01.md) | 익명 응답 5건과 카드 수정 이유 |
 
-## 실제 소규모 검증 기록
+[완성 카드와 원고](../campaign-v03.html), [채널별 제작안](../campaign-kit-v02.html), [제휴 제안서](../partner-proposal-v02.html)는 공개 웹페이지로도 읽을 수 있습니다.
 
-| 문서 | 내용 |
-| --- | --- |
-| [USER-MESSAGE-CHECK-2026-10-08-v01.md](USER-MESSAGE-CHECK-2026-10-08-v01.md) | 익명 5명의 메시지 A/B 선택, 정성 의견, 다음 테스트 문장 |
-| [SECOND-MESSAGE-CHECK-2026-10-08-v01.md](SECOND-MESSAGE-CHECK-2026-10-08-v01.md) | 응답 수집 전의 2차 문장 비교 설계 |
-| [SECOND-MESSAGE-RESULT-2026-10-09-v01.md](SECOND-MESSAGE-RESULT-2026-10-09-v01.md) | 실제 익명 응답 5건의 집계, 해석, 카드 수정 결정 |
-
-## 참고 파일
-
-| 파일 | 내용 |
-| --- | --- |
-| [퍼짐-프로젝트소개.pdf](퍼짐-프로젝트소개.pdf) | 공개 신호를 확인하는 보조 도구 ‘퍼짐’ 소개 자료 |
-| [퍼짐-기능검증과통계기록.xlsx](퍼짐-기능검증과통계기록.xlsx) | 퍼짐의 기능과 통계 계산 기록 |
-| `toss-case.json` | 포트폴리오 화면에 표시하는 사례 데이터 |
-
-각 문서는 실제로 확인한 내용, 포트폴리오용 가설, 아직 검증하지 않은 결과를 구분해 작성했습니다.
+`archive/`에는 이전 PDF와 기획서, 퍼짐 단독 소개를 보관했습니다. `media/`에는 화면 미리보기가 있고, `data/`에는 공개 토스 사례 화면에서 쓰는 자료가 있습니다. 이 파일들은 현재 캠페인의 광고 결과가 아닙니다.

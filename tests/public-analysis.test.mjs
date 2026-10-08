@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {subject,publicEvidence,nextContent} from './diagnosis.mjs';
+import {subject,publicEvidence,nextContent} from '../src/diagnosis.mjs';
 test('읽지 못한 내용과 반응을 확인하지 못함으로 표시한다',()=>{
  const a={platform:'Instagram',id:'colorful_picture_life',title:'',description:'',posts:[]};
  assert.equal(subject(a).text,'내 브랜드');

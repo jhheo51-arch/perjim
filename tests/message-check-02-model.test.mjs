@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { guidance, summarizeResponses, validateResponse } from "./message-check-02-model.mjs";
+import { guidance, summarizeResponses, validateResponse } from "../src/message-check-02-model.mjs";
 
 const answer = overrides => ({ participantId: "P01", preferredMessage: "B", featureConfusion: "NO", clarityA: 3, clarityB: 5, interestA: 2, interestB: 4, ...overrides });
 

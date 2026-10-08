@@ -1,5 +1,5 @@
-import {diagnoseAccount,subject} from './diagnosis.mjs';
-import {test} from 'node:test';import assert from 'node:assert/strict';import {accountURL,parseFeed,parseTrends,recommend} from './strategy.mjs';
+import {diagnoseAccount,subject} from '../src/diagnosis.mjs';
+import {test} from 'node:test';import assert from 'node:assert/strict';import {accountURL,parseFeed,parseTrends,recommend} from '../src/strategy.mjs';
 test('지원 주소 정규화와 추적 문자열 제거',()=>{assert.equal(accountURL('https://www.instagram.com/colorful_picture_life/?utm_source=qr').url,'https://www.instagram.com/colorful_picture_life/');assert.equal(accountURL('https://blog.naver.com/tedd51').feed,'https://rss.blog.naver.com/tedd51.xml');});
 test('내부 주소와 임의 도메인, 게시물 주소 거절',()=>{for(const u of ['http://127.0.0.1','https://localhost/','https://www.instagram.com/p/abc/','https://user:password@instagram.com/test'])assert.throws(()=>accountURL(u));});
 test('RSS 실제 제목, 링크, 날짜 해석',()=>{const x=parseFeed('<item><title><![CDATA[일상의 색]]></title><link>https://blog.naver.com/a/1</link><pubDate>Wed</pubDate><description>&lt;p&gt;직접 찍은 사진&lt;/p&gt;</description></item>');assert.equal(x[0].title,'일상의 색');assert.equal(x[0].description,'직접 찍은 사진');});

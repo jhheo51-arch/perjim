@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { nextDecision, summarizeResponses, validateResponse } from "./message-check-model.mjs";
+import { nextDecision, summarizeResponses, validateResponse } from "../src/message-check-model.mjs";
 
 const response = overrides => ({ participantId: "P01", preferredMessage: "B", clarity: 4, tossLike: 4, actionIntent: 3, ...overrides });
 

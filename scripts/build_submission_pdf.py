@@ -12,7 +12,7 @@ from reportlab.platypus import Paragraph
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "docs" / "Trend-to-Trust-Brand-Marketing-2026-10-09-v01.pdf"
+OUTPUT = ROOT / "docs/archive/Trend-to-Trust-Brand-Marketing-2026-10-09-v01.pdf"
 FONT_DIR = Path("C:/Windows/Fonts")
 pdfmetrics.registerFont(TTFont("Malgun", str(FONT_DIR / "malgun.ttf")))
 pdfmetrics.registerFont(TTFont("Malgun-Bold", str(FONT_DIR / "malgunbd.ttf")))
@@ -133,7 +133,7 @@ sections = [
     ("완성 콘텐츠", "카드 6장 v03 · Meta 게시글 · 첫 뉴스레터 · 7일 뒤 후속 원고", "campaign-v03.html"),
     ("매체별 제작안", "Meta 피드/릴스, YouTube·Google 영상, 토스 온드 채널의 역할·컷·지표", "campaign-kit-v02.html"),
     ("외부 제휴 제안", "어피티 공동 연재의 추가 가치, 역할, 비용·권리·검수 조건", "partner-proposal-v02.html"),
-    ("학습 근거", "1·2차 익명 문장 비교 각 5건과 선택하지 않은 문장의 이유", "docs/SECOND-MESSAGE-RESULT-2026-10-09-v01.md"),
+    ("학습 근거", "1·2차 익명 문장 비교 각 5건과 선택하지 않은 문장의 이유", "docs/validation/SECOND-MESSAGE-RESULT-2026-10-09-v01.md"),
 ]
 y = H - 256
 for title, detail, path in sections:
