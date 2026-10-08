@@ -7,6 +7,12 @@ test('Google 뉴스 RSS에서 제목과 원문을 읽는다', () => {
   assert.deepEqual(parseGoogleNews(xml), [{title:'봄 전시 소식',url:'https://news.google.com/a',publisher:'테스트뉴스',publishedAt:'Wed, 07 Oct 2026 00:00:00 GMT'}]);
 });
 
+test('두 번 감싼 HTML 기호를 한 번만 해제한다', () => {
+  const xml = '<item><title>&amp;lt;가을&amp;gt;</title><link>https://example.com/a</link><source>연합뉴스</source><pubDate>Thu, 08 Oct 2026 00:00:00 GMT</pubDate></item>';
+  const [item] = parseGoogleNews(xml);
+  assert.equal(item.title, '&lt;가을&gt;');
+});
+
 test('한국어 키워드에서는 한국어 매체명이 확인된 뉴스를 우선한다',()=>{
   const items=[{title:'벚꽃 정보',publisher:'Unknown Site',url:'https://example.com/a'},{title:'벚꽃 개화',publisher:'테스트뉴스',url:'https://example.com/b'}];
   assert.deepEqual(selectNews(items,'벚꽃'),[items[1]]);
