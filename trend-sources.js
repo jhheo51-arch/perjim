@@ -1,7 +1,7 @@
 const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const today=()=>new Date(Date.now()+9*3600000).toISOString().slice(0,10),key='perjim-source-observations-v13';
 export const providers={
- naver:{name:'네이버 데이터랩',group:'검색',url:'https://datalab.naver.com/keyword/trendSearch.naver',unit:'검색 상대 지수',description:'같은 조회 결과에서 최대 검색 관심을 100으로 둔 상대값. 검색 횟수가 아닙니다.',status:'원문 조회, 수치 기록 지원. 인증값 미설정으로 자동 조회 미연결.'},
+ naver:{name:'네이버 데이터랩',group:'검색',url:'https://datalab.naver.com/keyword/trendSearch.naver',unit:'검색 상대 지수',description:'같은 조회 결과에서 최대 검색 관심을 100으로 둔 상대값. 검색 횟수가 아닙니다.',status:'NAVER API Hub 자동 조회를 지원합니다. 현재 연결 상태는 키워드 조회 결과에서 확인하세요.'},
  google:{name:'Google Trends',group:'검색',url:'https://trends.google.co.kr/trends/',unit:'검색 관심',description:'최신 한국 급상승 검색 관심을 피드로 읽습니다. 탐색 화면의 상대 지수와 피드 검색량은 구분합니다.',status:'한국 급상승 피드 자동 조회'},
  bigkinds:{name:'빅카인즈',group:'뉴스',url:'https://www.bigkinds.or.kr/',unit:'기사 건수',description:'검색어가 포함된 뉴스의 기간별 기사 건수를 확인합니다. 사람 수나 공유 수가 아닙니다.',status:'원문 조회, 수치 기록 지원. 자동 기사 수집 미연결.'},
  some:{name:'썸트렌드',group:'소셜',url:'https://some.co.kr/analysis/compare/mention',unit:'언급량',description:'단어가 언급된 자료의 수를 기간, 채널과 함께 확인합니다. 채널과 이용 범위는 원문에서 확인하세요.',status:'원문 조회, 수치 기록 지원. 자동 소셜 수집 미연결.'},

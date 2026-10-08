@@ -2,6 +2,7 @@ import {deliveryReview,guidanceSources} from './recommendation-guidance.mjs';
 import {setupDecision,decisionTrends,decisionTrendError} from './decision-ui.js?v=19';
 import {setupWorkflow,brandContext,trendContext} from './brand-workflow.js';
 import {renderSource,setupSources} from './trend-sources.js';
+import {setupTrendEvidence} from './trend-evidence-ui.js';
 import {renderBlack,setupResearch} from './keyword-research.js';
 import {subject,diagnoseAccount,publicEvidence,nextContent} from './diagnosis.mjs';
 import {recommend} from './strategy.mjs';
@@ -30,7 +31,9 @@ $('social-form').onsubmit=e=>{e.preventDefault();try{const before=new Date($('so
 $('download').onclick=()=>{const data={createdAt:new Date().toISOString(),account,accounts,topic:$('topic').value,goal:$('goal').value,recommendations:analysis,selectedTrend:selected,trendSource:feed?{url:feed.source,fetchedAt:feed.fetchedAt}:null,limitations:['추천은 공개 정보와 입력 주제에 따른 규칙 기반 제안입니다.','검색량은 SNS 바이럴 수치가 아닙니다.','비공개 반응과 브랜드 기억, 재방문은 확인하지 못했습니다.']},u=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=u;a.download='퍼짐-SNS-진단-'+Date.now()+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);};
 setupResearch();
 setupSources();
+setupTrendEvidence();
 setupWorkflow();
 setupDecision();
 window.addEventListener('decision-trend',e=>{brandContext(e.detail.topic,e.detail.platform||'Instagram');trendContext(e.detail.title,'내 소재와 단어가 연결된 현재 관심 후보입니다. 실제 브랜드 적합성을 검토하세요.','https://trends.google.com/trending?geo=KR');setTab('workflow');});
+window.addEventListener('trend-evidence-use',e=>{brandContext($('topic').value.trim()||'내 브랜드','기타 SNS');trendContext(e.detail.keyword,e.detail.summary,e.detail.source);setTab('workflow');});
 refresh();

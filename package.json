@@ -5,7 +5,7 @@
   "type": "module",
   "description": "돈을 쉽게 이해하도록 돕는 토스를 제안하는 브랜드 캠페인과 완성 콘텐츠",
   "scripts": {
-    "start": "node server.mjs",
+    "start": "node --env-file-if-exists=.env server.mjs",
     "test": "node --test"
   },
   "engines": {
