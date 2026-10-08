@@ -4,7 +4,7 @@
 
 토스 Brand Marketing Specialist 직무를 목표로 만들었습니다. 신호를 확인하고, 브랜드 메시지와 채널별 콘텐츠를 만들고, 작은 사용자 검증을 거쳐 다음 문장을 수정하는 과정을 한 저장소에 담았습니다.
 
-**[웹 포트폴리오](https://jhheo51-arch.github.io/trend-to-trust/)** , **[완성 카드뉴스,뉴스레터](https://jhheo51-arch.github.io/trend-to-trust/campaign.html)** , **[메시지 검증](https://jhheo51-arch.github.io/trend-to-trust/message-check.html)** , **[학습 과정](https://jhheo51-arch.github.io/trend-to-trust/learning-board.html)**
+**[웹 포트폴리오](https://jhheo51-arch.github.io/trend-to-trust/)** , **[완성 카드뉴스,뉴스레터](https://jhheo51-arch.github.io/trend-to-trust/campaign.html)** , **[1차 검증](https://jhheo51-arch.github.io/trend-to-trust/message-check.html)** , **[2차 검증](https://jhheo51-arch.github.io/trend-to-trust/message-check-02.html)** , **[학습 과정](https://jhheo51-arch.github.io/trend-to-trust/learning-board.html)**
 
 ---
 
@@ -33,7 +33,7 @@
 | 외부 파트너 | 어피티, 오늘의집, 캐릿을 역할 기준으로 비교 | 실제 접촉 전 제안서 |
 | 메시지 검증 | 문장 A/B를 익명 5명에게 제시 | 실제 소규모 검증 완료 |
 | 트렌드 근거 | Google Trends, NAVER 검색어 트렌드, YouTube, 뉴스 자료를 역할별로 확인 | 로컬 도구에서 확인, 일부 인증값 필요 |
-| 다음 수정 | 숫자 → 이유 → 행동을 한 문장에 담은 2차안 | 다음 검증 대기 |
+| 다음 수정 | 숫자와 생활 맥락을 함께 제시한 2차안 | [참여 화면](message-check-02.html) 준비 완료, 실제 응답 대기 |
 
 ### 실제로 확인한 것과 포트폴리오용 제안
 
@@ -51,7 +51,8 @@
 trend-to-trust/
 ├── index.html                 # 제출용 웹 포트폴리오
 ├── campaign.html              # 카드뉴스와 뉴스레터 원고
-├── message-check.html         # 익명 메시지 A/B 검증 화면
+├── message-check.html         # 1차 익명 메시지 A/B 검증 화면
+├── message-check-02.html      # 2차 문장 비교 참여 화면
 ├── learning-board.html        # 가설과 수정 과정을 보여주는 화면
 ├── partner-proposal.html      # 외부 파트너 제안 한 장 요약
 ├── tool.html                  # 공개 신호를 확인하는 보조 도구 ‘퍼짐’
@@ -81,7 +82,7 @@ NAVER 검색어 트렌드 자동 조회는 `.env.example`을 참고해 로컬 `.
 npm test
 ```
 
-자동 검사는 공개 자료의 확인 범위, 주소 처리, 통계 계산, 트렌드 근거 연결, 메시지 응답 저장과 문장 수정 흐름을 포함해 36개를 확인합니다. 마케팅 성과를 예측하거나 검증하는 검사는 아닙니다.
+자동 검사는 공개 자료의 확인 범위, 주소 처리, 통계 계산, 트렌드 근거 연결, 메시지 응답 저장과 문장 수정 흐름을 확인합니다. 마케팅 성과를 예측하거나 검증하는 검사는 아닙니다.
 
 ## 더 읽을 문서
 
@@ -89,8 +90,9 @@ npm test
 - [사례 연구](docs/CASE-STUDY.md): 확인한 사실과 캠페인 해석을 구분한 판단 과정
 - [캠페인 브리프](docs/CAMPAIGN-BRIEF-2026-10-08-v01.md): 브랜드 목표와 콘텐츠 제작 기준
 - [메시지 검증 기록](docs/USER-MESSAGE-CHECK-2026-10-08-v01.md): 실제 소규모 반응과 다음 테스트 설계
+- [2차 메시지 검증 설계](docs/SECOND-MESSAGE-CHECK-2026-10-08-v01.md): 후속 문장, 질문, 판단 범위
 - [제출 전 점검](docs/SUBMISSION-AUDIT-2026-10-08-v01.md): 제출물의 근거, 한계, 남은 검증
 
 ## 다음 검증
 
-다음 단계는 2차안 “배달비 18% 증가, 야근한 화요일 4번이 원인이에요.”를 같은 방식으로 다시 확인하는 것입니다. 숫자만 먼저 제시한 문장과 숫자,이유를 함께 제시한 문장을 비교해, 이해도와 행동 의향이 실제로 달라지는지 확인합니다.
+다음 단계는 [2차 검증 화면](https://jhheo51-arch.github.io/trend-to-trust/message-check-02.html)에서 기존 A안과 “18% 늘어난 배달비, 야근한 화요일 4번을 함께 돌아봐요.”를 비교하는 것입니다. 각 문장의 이해도와 이어서 볼 의향, 실제 기능으로 오해하는지 확인합니다. 2차 응답은 아직 수집 전입니다.
