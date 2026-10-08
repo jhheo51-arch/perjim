@@ -4,7 +4,7 @@
 
 토스 Brand Marketing Specialist 직무를 목표로 만든 개인 포트폴리오입니다. 공개 자료를 찾는 도구 제작부터 트렌드 해석, 브랜드 메시지, 매체별 콘텐츠, 외부 제휴안, VOC 기반 수정까지 하나의 업무 흐름으로 연결했습니다.
 
-**[포트폴리오 보기](index.html)** · **[퍼짐 도구 보기](tool.html)** · **[통합 기획서](docs/PRD.md)** · **[제출 전 점검](docs/SUBMISSION-AUDIT-2026-10-08-v01.md)**
+**[웹 포트폴리오](https://jhheo51-arch.github.io/trend-to-trust/)** · **[퍼짐 화면](https://jhheo51-arch.github.io/trend-to-trust/tool.html)** · **[통합 기획서](docs/PRD.md)** · **[제출 전 점검](docs/SUBMISSION-AUDIT-2026-10-08-v01.md)**
 
 ## 한눈에 보는 프로젝트
 
@@ -60,6 +60,8 @@ npm start
 ```
 
 브라우저에서 `http://127.0.0.1:4191/`을 열면 포트폴리오가, `http://127.0.0.1:4191/tool.html`을 열면 퍼짐이 표시됩니다.
+
+GitHub Pages의 퍼짐 화면은 인터페이스 확인용입니다. 공개 자료를 읽는 서버 기능은 위 명령으로 로컬에서 실행할 때 작동합니다.
 
 ```sh
 npm test
