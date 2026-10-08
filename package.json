@@ -1,9 +1,9 @@
 {
-  "name": "perjim",
+  "name": "trend-to-trust",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "SNS 공개 콘텐츠 분석과 다음 콘텐츠 추천",
+  "description": "공개 신호 수집 도구 퍼짐에서 토스 브랜드 캠페인으로 이어지는 포트폴리오",
   "scripts": {
     "start": "node server.mjs",
     "test": "node --test"

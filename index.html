@@ -1,1 +1,143 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>퍼짐 | 내 SNS의 다음 방향</title><link rel="stylesheet" href="dashboard.css"><link rel="stylesheet" href="guide.css"></head><body><a class="skip" href="#main">본문으로 이동</a><main id="main"><div class="intro"><p class="eyebrow">내 브랜드가 퍼질 다음 방향</p><h1 class="brand-name">퍼짐<span class="brand-dot" aria-hidden="true">.</span></h1><p class="brand-promise">지금의 관심을, 내 브랜드의 확산으로.</p><p>SNS 주소를 넣으면 공개 콘텐츠를 확인하고,<br>보완할 요소와 다음 콘텐츠를 제안합니다.</p></div><p class="case-entry"><a href="case.html">토스 머니북 분석 사례 보기</a><span>메시지와 채널, 두 콘텐츠 안의 선택 이유</span></p><div class="view-tabs" role="tablist" aria-label="서비스 화면"><button role="tab" id="tab-diagnosis" aria-selected="true" aria-controls="diagnosis-view">내 SNS 분석</button><button role="tab" id="tab-keywords" aria-selected="false" aria-controls="keyword-view" tabindex="-1">오늘과 이번 주 키워드</button><button role="tab" id="tab-workflow" aria-selected="false" aria-controls="workflow-view" tabindex="-1">다음 콘텐츠 추천</button><button role="tab" id="tab-decision" aria-selected="false" aria-controls="decision-view" tabindex="-1">상세 통계 (선택)</button></div><div id="diagnosis-view" role="tabpanel" aria-labelledby="tab-diagnosis"><section id="account" class="panel"><p class="muted">상세 통계는 선택 사항입니다. 공개 자료로 먼저 분석합니다.</p><h2>내 SNS 주소로 시작하기</h2><form id="account-form"><label>SNS 주소 (필수)<textarea id="url" rows="3" required placeholder="SNS 홈 주소를 한 줄에 하나씩 넣어 주세요. 최대 5개"></textarea></label><details><summary>한 줄 소개 추가 (선택)</summary><label>어떤 콘텐츠를 만드시나요?<input id="topic" maxlength="100" placeholder="예: 색감을 살린 일상 사진"></label></details><input id="goal" type="hidden" value="공유와 새 독자 발견"><button class="primary" id="analyze">공개 콘텐츠 분석하기</button><p class="muted">주소만으로 시작할 수 있습니다. 읽지 못한 정보는 확인하지 못함으로 표시합니다.</p><p class="muted">여러 SNS 주소를 함께 등록할 수 있습니다. 공개 정보를 읽을 수 있는 범위는 플랫폼마다 다릅니다.</p></form><p id="account-status" role="status" aria-live="polite"></p><div id="account-result"></div></section><section id="conditions" hidden><div class="section-head"><h2>내 SNS 콘텐츠 방향과 실행 제안</h2><button id="download">진단과 선택한 방향 내려받기</button></div><div class="recommendations" id="recommendations"></div><div class="panel" id="direction"></div></section></div><div id="keyword-view" role="tabpanel" aria-labelledby="tab-keywords" hidden><section id="trends"><div class="section-head"><div><h2>오늘, 이번 주 키워드</h2><p class="muted">한국 검색 관심 신호와 SNS 확산 증거를 구분합니다.</p></div><button id="refresh">최신 자료 확인</button></div><div class="filters"><label>관측 기간<select id="period"><option value="today">오늘</option><option value="week">이번 주</option></select></label><label>관심 키워드<input id="keyword" placeholder="예: 전시, 사진, 여행"></label><label>자료 종류<select id="kind"><option value="search">Google Trends, 검색 관심</option><option value="naver">네이버 데이터랩, 검색 지수</option><option value="bigkinds">빅카인즈, 뉴스 기사</option><option value="some">썸트렌드, 소셜 언급</option><option value="words">트렌드어워드, 신조어</option><option value="black">블랙키위 공개 확인 자료</option><option value="social">확산 관측 기록</option></select></label></div><p id="trend-status" class="notice" role="status" aria-live="polite"></p><div class="grid" id="trend-list"></div><section class="panel" id="source-hub"><h3>소재에 맞는 자료로 확인하기</h3><p>검색 관심, 뉴스 보도량, 소셜 언급과 유행어의 맥락을 각각 확인하세요.</p><div class="source-grid" id="source-links"></div><details><summary>외부 사이트의 수치 기록</summary><p>원문에서 확인한 수치만 기록하세요. 같은 단어도 사이트, 기간, 채널이 다르면 비교 기준이 달라집니다.</p><form id="source-form"><label>키워드<input id="source-word" required maxlength="100"></label><div class="grid"><label>출처<select id="source-provider"><option value="naver">네이버 데이터랩</option><option value="bigkinds">빅카인즈</option><option value="some">썸트렌드</option></select></label><label>수치<input id="source-value" type="number" min="0" step="any" required></label><label>기간 시작<input id="source-start" type="date" required></label><label>기간 끝<input id="source-end" type="date" required></label></div><p id="source-unit" class="muted"></p><label>조회 조건, 채널, 지역, 연령 등<input id="source-scope" required maxlength="300" placeholder="예: 한국, 전체 연령, 일간"></label><label>근거 주소<input id="source-url" type="url" required></label><button>확인한 수치 저장</button><p id="source-status" role="status"></p></form></details></section><section class="panel" id="keyword-research"><h3>키워드 흐름과 콘텐츠 방향 검토</h3><p>위 자료에서 관심의 변화와 사용 맥락을 확인한 뒤, 내 브랜드에 적용할 방향을 기록하세요.</p><label>검토할 키워드<input id="research-keyword" placeholder="예: 단풍 사진"></label><div class="buttons" id="research-links"></div><p id="research-status" class="muted"></p><details><summary>확인 근거와 콘텐츠 방향 기록</summary><form id="research-form"><label>확인한 내용<textarea id="research-note" rows="3" placeholder="예: 블랙키위에서 관련 키워드의 시즌 집중시기를 확인했습니다."></textarea></label><label>확인한 원문 주소<input id="research-source" type="url" value="https://blackkiwi.net/service/trend" required></label><label>확인 날짜<input id="research-date" type="date" required></label><label>내 브랜드에 적용할 방향<textarea id="research-action" rows="2" placeholder="예: 단풍 명소보다 내가 직접 촬영한 색과 장소를 연결하겠습니다."></textarea></label><button>근거와 방향 저장</button></form></details><div id="research-records"></div></section><details class="panel"><summary>SNS 확산 관측 기록 추가</summary><p>같은 콘텐츠의 두 관측 시점에서 조회, 공유 증가를 확인한 경우 기록하세요. 증가 기록이 시장 전체의 바이럴 성공 판정은 아닙니다. 등록 자료는 직접 대조해야 합니다.</p><form id="social-form"><label>콘텐츠 제목<input id="social-title" required maxlength="120"></label><label>원본 콘텐츠 주소<input id="social-url" type="url" required></label><div class="grid"><label>이전 관측 시점<input id="social-before" type="datetime-local" required></label><label>현재 관측 시점<input id="social-after" type="datetime-local" required></label><label>지표<select id="social-metric"><option>조회수</option><option>공유수</option></select></label><label>이전 수치<input id="social-old" type="number" min="0" step="1" required></label><label>현재 수치<input id="social-new" type="number" min="0" step="1" required></label><label>관측 근거 주소, 통계 캡처 문서 등<input id="social-evidence" type="url" required></label></div><button>확산 관측 기록 저장</button></form><p id="social-status" role="status"></p></details></section></div><div id="workflow-view" role="tabpanel" aria-labelledby="tab-workflow" hidden><section class="panel quick-intro"><span class="tag">내 SNS에 맞는 확산 힌트</span><h2>퍼질 포인트, 우리가 찾아드릴게요.</h2><p>어떻게 시작하고, 왜 공유하고, 무엇을 기억하게 할지.<br>내 주제에 맞는 콘텐츠 안을 바로 확인하세요.</p><details><summary>주제 바꾸기 (선택)</summary><label>어떤 콘텐츠를 만드시나요?<input id="quick-topic" maxlength="120" placeholder="예: 색감을 살린 일상 사진"></label></details><button id="quick-recommend" class="primary">내 콘텐츠에 맞게 추천</button><p id="quick-basis" class="muted"></p></section><section id="quick-results"></section><div class="quick-actions"><button id="quick-save">이 추천 저장</button><p id="quick-status" role="status"></p></div><details id="workflow-advanced" class="panel"><summary>추천안 다듬기, 반응 기록 (선택)</summary><section class="panel"><span class="tag">선택 → 전달 → 확인 → 수정</span><h2>관심을 내 브랜드의 이야기로</h2><p>유행하는 이유와 우리 브랜드에 맞는 이유를 구분하세요. 실제 응답을 남기면 다음 메시지를 무엇부터 바꿀지 검토할 수 있습니다.</p><p id="workflow-context" class="notice">SNS 추천 또는 키워드 카드에서 가져오거나 직접 기획을 시작하세요.</p><form id="brief-form"><div class="grid"><label>브랜드 주제<input id="brief-brand" required maxlength="120" placeholder="예: 색감을 살린 일상 사진"></label><label>대상 독자<input id="brief-audience" required maxlength="150" placeholder="예: 가까운 곳에서 새로운 장면을 찾는 사람"></label></div><label>브랜드가 전달할 한 문장<input id="brief-promise" required maxlength="200" placeholder="예: 평범한 하루에도 발견할 색이 있습니다."></label><div class="grid"><label>검토할 소재<input id="brief-keyword" required maxlength="100" placeholder="예: 가을 산책"></label><label>선택 여부<select id="brief-choice"><option value="use">활용</option><option value="hold">보류</option><option value="skip">제외</option></select></label></div><label>관심 신호, 무엇을 확인했나요?<textarea id="brief-signal" required rows="2" placeholder="검색 지수, 기간, 출처에서 확인한 사실만 적어 주세요."></textarea></label><label>관심 신호의 근거 주소<input id="brief-source" type="url" required placeholder="https://"></label><label>사람들의 생활과 연결되는 맥락<textarea id="brief-context" required rows="2" placeholder="예: 멀리 떠나지 않고도 계절을 느끼고 싶은 상황, 아직 검증 전인 해석"></textarea></label><label>이 브랜드에 맞거나 맞지 않는 이유<textarea id="brief-reason" required rows="2" placeholder="브랜드의 관점, 직접 경험, 독자가 얻는 것과 연결해 주세요."></textarea></label><details><summary>직접 관찰한 공간, 전시, 거리 기록 (선택)</summary><label>관찰한 장소<input id="brief-place" maxlength="150"></label><label>관찰 날짜<input id="brief-date" type="date"></label><label>직접 본 장면과 해석<textarea id="brief-offline" rows="2" placeholder="관찰한 사실과 나의 해석을 구분하세요. 방문하지 않았다면 기록하지 마세요."></textarea></label></details><button class="primary">선택 근거 저장하고 콘텐츠 안 만들기</button><p id="brief-status" role="status"></p></form></section><section id="brief-output" class="panel" hidden></section><section id="validation-panel" class="panel" hidden><h2>전달 후, 무엇이 기억됐나요?</h2><p>공개 게시와 독자에게 초안을 보여준 검증을 구분합니다. 응답은 한 사람당 한 기록으로 추가하고 이름 대신 구분 기호를 쓰세요.</p><form id="response-form"><div class="grid"><label>응답자 구분<input id="response-person" required maxlength="50" placeholder="예: R01"></label><label>전달 방식<select id="response-mode"><option value="preview">초안 제시, 메시지 이해도 검증</option><option value="published">실제 게시 콘텐츠</option></select></label><label>응답 날짜<input id="response-date" type="date" required></label><label>의도한 메시지와 일치하나요?<select id="response-match"><option value="yes">일치, 운영자 분류</option><option value="partial">일부 일치, 운영자 분류</option><option value="no">불일치, 운영자 분류</option></select></label></div><label>어떤 메시지로 이해했나요?<textarea id="response-understanding" required rows="2"></textarea></label><label>누구에게 공유하고 싶고, 왜인가요?<textarea id="response-share" required rows="2"></textarea></label><label>어떤 브랜드로 기억했나요?<textarea id="response-memory" required rows="2"></textarea></label><label>다시 찾고 싶은 이유 또는 찾지 않을 이유<textarea id="response-return" required rows="2"></textarea></label><label>응답 근거, 공개 콘텐츠 주소 또는 익명 기록 메모<textarea id="response-evidence" required rows="2" placeholder="실제로 받은 응답과 확인 방법을 적어 주세요. 원문 자동 검증은 수행하지 않습니다."></textarea></label><button>실제 응답 기록</button><p id="response-status" role="status"></p></form><div id="response-summary"></div></section><section id="revision-panel" class="panel" hidden><h2>응답을 보고 무엇을 바꿀까요?</h2><form id="revision-form"><label>근거로 삼을 응답<select id="revision-response" required></select></label><label>바꾸기 전 문구, 구성<textarea id="revision-before" required rows="2"></textarea></label><label>바꿀 문구, 구성<textarea id="revision-after" required rows="2"></textarea></label><label>바꾸는 이유와 다음에 확인할 것<textarea id="revision-why" required rows="2"></textarea></label><button>수정 이유와 다음 검증 저장</button><p id="revision-status" role="status"></p></form><div id="revision-history"></div></section><section class="panel"><h3>내 기획 기록</h3><p>이 브라우저에 저장됩니다. 다른 기획을 열면 해당 기획의 응답과 수정 기록을 이어 볼 수 있습니다.</p><div id="brief-history"></div><button id="workflow-export">기획, 응답, 수정 기록 내보내기</button><p id="workflow-export-status" role="status"></p></section></details></div><div id="decision-view" role="tabpanel" aria-labelledby="tab-decision" hidden><section class="panel"><span class="tag">내 데이터 → 변화 → 다음 선택</span><h2>지난번과 달라진 반응, 다음에는 무엇을 만들까요?</h2><p>콘텐츠 통계를 저장해 두면 다음 등록 때 같은 조건의 최근 3개와 이전 3개를 비교합니다. 현재 관심 소재는 관련성이 있는 경우에만 연결 후보로 보여줍니다.</p><div class="quick-actions"><button id="decision-add">콘텐츠 통계 등록</button><button id="decision-demo">예시로 작동 방식 보기</button></div><p id="decision-mode" class="notice" role="status"></p><details id="decision-entry"><summary>콘텐츠 통계 입력, 모르는 반응은 비워두세요</summary><form id="decision-form"><label>게시물 주소<input id="decision-url" type="url" required placeholder="https://"></label><div class="grid"><label>콘텐츠 제목<input id="decision-title" required maxlength="150"></label><label>소재<input id="decision-topic" required maxlength="100" placeholder="예: 동네 산책, 색감"></label><label>게시 날짜<input id="decision-date" type="date" required></label><label>형식<select id="decision-format"><option>사진 피드</option><option>캐러셀</option><option>릴스</option><option>스토리</option><option>블로그 글</option><option>영상</option></select></label></div><details><summary>SNS 주소, 통계 비교 조건</summary><label>SNS 홈 주소<input id="decision-account" type="url" required value=""></label><div class="grid"><label>플랫폼<select id="decision-platform"><option>Instagram</option><option>YouTube</option><option>TikTok</option><option>네이버 블로그</option><option>기타 SNS</option></select></label><label>통계 시점<select id="decision-window"><option value="7">게시 후 7일 수치</option><option value="1">게시 후 1일 수치</option><option value="30">게시 후 30일 수치</option></select></label><label>광고 여부<select id="decision-paid"><option value="organic">유료 노출 없음</option><option value="paid">유료 노출 포함</option><option value="unknown">확인하지 못함</option></select></label><label>기준 수 종류<select id="decision-basis"><option value="reach">도달</option><option value="views">조회</option></select></label></div></details><div class="grid"><label>도달 또는 조회 수<input id="decision-exposures" type="number" min="1" step="1" required></label><label>공유 수, 선택<input id="decision-shares" type="number" min="0" step="1"></label><label>저장 수, 선택<input id="decision-saves" type="number" min="0" step="1"></label><label>이 게시물 기여 팔로우 수, 선택<input id="decision-follows" type="number" min="0" step="1"></label></div><p class="muted">선택한 시점의 통계를 넣으세요. 현재까지의 누적 통계와 섞지 않습니다. 계정 전체 팔로워 증가를 게시물 기여로 입력하지 마세요. 주소만으로 비공개 통계를 읽지는 않습니다.</p><details><summary>첫 장면, 질문 메모 (선택)</summary><label>무엇을 보여주고 물었나요?<textarea id="decision-note" rows="2" maxlength="1000"></textarea></label></details><button class="primary">통계 저장하고 다음 선택 보기</button><p id="decision-status" role="status"></p></form></details></section><section id="decision-analysis"><div class="panel"><h3>내 콘텐츠 자료가 아직 없습니다</h3><p>통계를 등록하거나 예시로 흐름을 확인하세요. 실제 성과나 변화율을 만들어 채우지 않습니다.</p></div></section><details class="panel"><summary>자료 보관, 백업, 계산 기준</summary><p>이 브라우저에 누적 저장합니다. 같은 게시물과 같은 비교 조건을 다시 입력하면 새 값으로 갱신하고 이전 값을 보관합니다.</p><button id="decision-export">내 기록 파일 내려받기</button><label>이전에 보관한 기록 파일 가져오기<input id="decision-import" type="file" accept="application/json,.json"></label><p id="decision-backup-status" role="status"></p><p>반응률은 같은 지표가 있는 게시물의 반응 합계 ÷ 기준 수 합계입니다. 게시물별 비율의 단순 평균이 아닙니다. 도달, 조회 기준을 구분하고, 빈 수치는 0으로 바꾸지 않습니다. 공유, 저장은 고유 사람 수가 아니므로 반복 행동이 포함될 수 있습니다.</p><p>게시물 구성, 광고, 노출 환경 등 여러 요인이 반응에 영향을 줄 수 있습니다. 변화와 원인을 구분하며 3개 비교가 통계적 확신을 보장하지 않습니다.</p><div id="decision-audit"></div></details></div><details class="recommendation-basis"><summary>추천의 근거 <span class="basis-hint">설명과 출처 보기</span></summary><div class="basis-content"><p>계정 공개 정보 → 선택 소개 또는 공개 자료의 주제 후보 → 최신 관심 소재의 관련성 → 메시지, 형식, 참여 질문 제안 순서입니다. 게시 주기와 키워드는 시험할 조건이며, 바이럴 보장 점수는 제공하지 않습니다.</p><p><a href="https://about.fb.com/br/news/2024/04/ajudando-o-criador-de-conteudo-a-encontrar-novos-publicos/" target="_blank" rel="noopener">Meta 원본 콘텐츠, 추천 안내 (2024)</a>, <a href="https://trends.google.com/trending?geo=KR" target="_blank" rel="noopener">Google Trends 한국</a>, <a href="https://ads.tiktok.com/creative/creativeCenter/trends" target="_blank" rel="noopener">TikTok 공식 트렌드 탐색</a></p><p><a href="https://developers.naver.com/docs/serviceapi/datalab/search/search.md" target="_blank" rel="noopener">네이버 데이터랩 공식 API 문서</a>, 인증값이 필요한 데이터랩은 아직 연결하지 않았습니다. Google Trends는 최신 검색 관심을 읽으며, 블랙키위는 확인 시점이 표시된 공개 자료와 원문 비교에 활용합니다. 블랙키위 자료는 자동 갱신되지 않습니다.</p></div></details><footer>계정 로그인 없이 공개 자료를 읽습니다. 제한된 정보는 추정해 채우지 않습니다. 검색량은 SNS 조회, 공유 수가 아닙니다. 추천은 공개 자료와 입력 내용에 따른 규칙 기반 제안입니다.</footer></main><script type="module" src="guide.js?v=19"></script></body></html>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="트렌드를 토스다운 브랜드 메시지로 번역하고 VOC로 다음 콘텐츠를 고친 브랜드 마케팅 포트폴리오">
+  <title>Trend to Trust — 브랜드 마케팅 포트폴리오</title>
+  <link rel="stylesheet" href="./portfolio.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Trend to Trust 처음으로">TREND TO TRUST</a>
+    <nav aria-label="포트폴리오 메뉴"><a href="#tool">퍼짐</a><a href="#trend">트렌드</a><a href="#campaign">캠페인</a><a href="#voc">VOC</a><a href="#sprint">학습</a></nav>
+    <button id="printButton" class="print-button" type="button">PDF 저장</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-main">
+        <p class="kicker">BRAND MARKETING CASE · 2026</p>
+        <h1>트렌드를 읽고,<br><em>신뢰로 바꾸는</em><br>브랜드 캠페인.</h1>
+        <p class="lead">트렌드와 공개 자료를 수집하고 반응을 기록하는 ‘퍼짐’을 만들고, 여기서 발견한 신호를 토스 브랜드 캠페인 ‘Trend to Trust’로 발전시켰습니다.</p>
+        <div class="hero-actions"><a class="button primary" href="#tool">업무 방식 보기</a><a class="button ghost" href="#voc">콘텐츠 변화 보기</a></div>
+      </div>
+      <aside class="case-card" aria-label="프로젝트 개요">
+        <div class="case-card-head"><span>CASE 01</span><strong>개인 프로젝트</strong></div>
+        <dl>
+          <div><dt>캠페인</dt><dd>생활비 리셋</dd></div>
+          <div><dt>목표</dt><dd>쉬운 금융에서 믿을 수 있는 금융으로</dd></div>
+          <div><dt>대상</dt><dd>내 소비 이유가 궁금한 20–34세</dd></div>
+          <div><dt>기여</dt><dd>도구·리서치·전략·소재·프로토타입 100%</dd></div>
+        </dl>
+        <p>토스 채용 공고를 바탕으로 구성한 비공식 포트폴리오입니다. 캠페인과 VOC, 결과 수치는 시연용 가상 자료입니다.</p>
+      </aside>
+    </section>
+
+    <section class="project-thesis section compact">
+      <p class="chapter">00 · PROJECT THESIS</p>
+      <div class="thesis-grid"><h2>VOC는 마지막 보고서가 아니라<br>다음 콘텐츠의 시작점입니다.</h2><p>트렌드는 사람들이 무엇에 관심을 두는지 알려주고, VOC는 그 관심을 브랜드가 제대로 해석했는지 알려줍니다. 두 근거가 연결될 때 콘텐츠는 감이 아니라 학습으로 발전합니다.</p></div>
+    </section>
+
+    <section id="tool" class="tool section">
+      <div class="section-head"><div><p class="chapter">00.5 · MY OPERATING TOOL</p><h2>감으로 고르지 않기 위해<br>‘퍼짐’을 만들었습니다.</h2></div><p class="section-note">공개 자료를 어디까지 읽었는지 표시하고, 트렌드와 다음 콘텐츠 두 안을 같은 흐름에서 비교하는 로컬 도구입니다.</p></div>
+      <div class="tool-grid">
+        <article class="tool-story"><span>SIGNAL WORKFLOW</span><ol><li><strong>수집</strong><p>공개 피드와 검색 관심 자료를 확인합니다.</p></li><li><strong>구분</strong><p>확인한 사실, 해석, 아직 모르는 정보를 나눕니다.</p></li><li><strong>선택</strong><p>두 콘텐츠 안을 비교하고 선택 이유를 기록합니다.</p></li><li><strong>학습</strong><p>반응과 수정 이유를 다음 기획에 남깁니다.</p></li></ol></article>
+        <article class="tool-proof"><span>WORKING PROTOTYPE</span><strong>27</strong><h3>자동 검사 통과</h3><p>읽지 못한 정보를 추정하지 않는지, 빈 반응을 0으로 바꾸지 않는지, 서로 다른 조건의 지표를 섞지 않는지 확인했습니다.</p><a class="button primary" href="./tool.html">퍼짐 직접 보기</a><a class="text-link" href="./docs/PRD.md">통합 기획서 읽기</a></article>
+      </div>
+      <p class="evidence-note">퍼짐이 수집한 값만으로 캠페인 성과를 예측하지 않았습니다. 이번 사례에서는 공개 자료를 찾고 판단 근거를 남기는 업무 과정에 활용했습니다.</p>
+    </section>
+
+    <section id="trend" class="trend section">
+      <div class="section-head"><div><p class="chapter">01 · TREND SIGNAL</p><h2>세 가지 신호에서<br>하나의 기회를 찾았습니다.</h2></div><p class="section-note">공개 자료의 사실과 포트폴리오를 위한 해석을 구분했습니다.</p></div>
+      <div class="trend-grid">
+        <article class="trend-card selected" data-signal="cost" tabindex="0">
+          <span class="signal-no">01 / ECONOMY</span><strong class="signal-number">−1.2%p</strong><h3>지출은 늘었지만,<br>소비성향은 낮아졌습니다.</h3><p>2026년 2분기 가계지출은 3.0% 증가했고 평균소비성향은 1.2%p 하락했습니다.</p><a href="https://mods.go.kr/board.es?act=view&bid=214&list_no=446633&mid=a10301040400" target="_blank" rel="noreferrer">국가데이터처 자료</a>
+        </article>
+        <article class="trend-card" data-signal="trust" tabindex="0">
+          <span class="signal-no">02 / PLATFORM</span><strong class="signal-number">94%</strong><h3>영상은 오락을 넘어<br>정보를 찾는 공간입니다.</h3><p>유튜브는 한국 이용자의 94%가 정보와 지식을 얻기 위해 서비스를 활용한다고 밝혔습니다.</p><a href="https://blog.youtube/intl/ko-kr/news-and-events/yt-korea-trusted-resources/" target="_blank" rel="noreferrer">YouTube 공식 블로그</a>
+        </article>
+        <article class="trend-card" data-signal="depth" tabindex="0">
+          <span class="signal-no">03 / CULTURE</span><strong class="signal-number">LONG</strong><h3>짧은 영상 시대에도<br>깊이와 노력은 선택받습니다.</h3><p>2025 YouTube 트렌드는 장편 콘텐츠의 부활과 한국의 ‘노력 프리미엄’을 주요 변화로 제시했습니다.</p><a href="https://blog.youtube/intl/ko-kr/culture-and-trends/year-on-youtube-2025-global/" target="_blank" rel="noreferrer">YouTube 트렌드 리포트</a>
+        </article>
+      </div>
+      <div class="signal-decision" id="signalDecision" aria-live="polite"></div>
+    </section>
+
+    <section class="translation section">
+      <p class="chapter">02 · BRAND TRANSLATION</p>
+      <div class="translation-flow">
+        <article><span>확인한 사실</span><h3>생활비 부담 속에서도 사람들은 돈의 이유를 이해하려 합니다.</h3><p>통계와 플랫폼 자료에서 확인한 신호</p></article>
+        <article><span>가능한 해석</span><h3>‘무조건 아끼기’보다 내 소비를 납득하고 싶은 욕구가 있습니다.</h3><p>실제 사용자 욕구로 확정하지 않은 캠페인 가설</p></article>
+        <article class="accent"><span>브랜드의 역할</span><h3>복잡한 금융을 쉽게 말하되, 근거와 계산 과정을 가까이 둡니다.</h3><p>토스다운 커뮤니케이션으로 번역</p></article>
+      </div>
+      <blockquote>“돈을 줄이기 전에,<br><strong>흐름부터 봅니다.</strong>”</blockquote>
+    </section>
+
+    <section id="campaign" class="campaign section">
+      <div class="section-head light"><div><p class="chapter">03 · CHANNEL CRAFT</p><h2>하나의 메시지를<br>채널의 문법으로 바꿨습니다.</h2></div><p class="section-note">채널을 눌러 첫 장면, 콘텐츠 구조, 확인 지표를 비교해 보세요.</p></div>
+      <div class="channel-tabs" role="tablist" aria-label="채널별 콘텐츠">
+        <button role="tab" aria-selected="true" data-channel="meta" type="button">Meta</button>
+        <button role="tab" aria-selected="false" data-channel="youtube" type="button">YouTube · Google</button>
+        <button role="tab" aria-selected="false" data-channel="owned" type="button">토스 온드 채널</button>
+      </div>
+      <div class="channel-stage" id="channelStage" role="tabpanel" tabindex="0"></div>
+    </section>
+
+    <section class="partner section">
+      <div class="section-head"><div><p class="chapter">03.5 · PARTNER ROUTE</p><h2>매체 집행에서 끝나지 않고<br>외부 접점을 설계했습니다.</h2></div><p class="section-note">실제 제휴가 아닌 포트폴리오용 제안입니다. 연락 전 공개 채널의 주제·댓글 맥락·광고 표기 방식을 다시 확인해야 합니다.</p></div>
+      <div class="partner-grid">
+        <article><span>발굴 기준</span><h3>생활비를 자기 경험으로 말하는 크리에이터</h3><p>20–34세 생활 맥락, 설명형 콘텐츠 경험, 금융 조언을 과장하지 않는 태도를 우선합니다.</p></article>
+        <article class="accent"><span>제휴 아이디어</span><h3>7일 생활비 리셋 다이어리</h3><p>절약 성공담보다 소비가 달라진 이유를 기록하고, 토스의 소비 흐름 보기로 확인 과정을 연결합니다.</p></article>
+        <article><span>함께 볼 지표</span><h3>도달보다 다음 행동</h3><p>완주율, 근거 보기, 소비 리포트 진입과 댓글의 이해 문장을 함께 검토합니다.</p></article>
+      </div>
+    </section>
+
+    <section id="voc" class="voc section">
+      <div class="section-head"><div><p class="chapter">04 · VOC LEARNING LOOP</p><h2>가상 반응을 분류해,<br>콘텐츠 수정안을 만들었습니다.</h2></div><p class="section-note">가상 반응 12건을 분석한 시뮬레이션입니다. 빈도를 실제 고객 비율로 해석하지 않았습니다.</p></div>
+      <div class="voc-filters" role="group" aria-label="VOC 주제 필터">
+        <button class="voc-filter active" data-filter="all" type="button">전체 12</button>
+        <button class="voc-filter" data-filter="공감" type="button">공감 4</button>
+        <button class="voc-filter" data-filter="근거요청" type="button">근거 요청 5</button>
+        <button class="voc-filter" data-filter="행동요청" type="button">행동 요청 3</button>
+      </div>
+      <div class="voc-workbench">
+        <div class="voc-list-wrap"><div class="voc-list-head"><strong>근거 VOC</strong><span id="vocCount">12건</span></div><div id="vocList" class="voc-list"></div></div>
+        <aside class="voc-reading" id="vocReading"></aside>
+      </div>
+
+      <div class="iteration">
+        <div class="iteration-head"><p class="chapter">CREATIVE ITERATION</p><h3>같은 메시지, 다른 완성도</h3></div>
+        <div class="before-after">
+          <article class="creative before"><span>1차 콘텐츠</span><div class="creative-screen"><small>이번 달 소비 분석</small><strong>돈을 어디에<br>많이 썼을까요?</strong><p>소비 카테고리를 확인해 보세요.</p></div><ul><li>질문은 쉬웠지만 결과의 이유가 부족함</li><li>다음 행동이 모호함</li></ul></article>
+          <div class="change-log"><span>VOC에서 배운 것</span><strong>+ 계산 기준</strong><strong>+ 생활 장면</strong><strong>+ 바로 할 행동</strong></div>
+          <article class="creative after"><span>2차 콘텐츠</span><div class="creative-screen"><small>생활비 리셋 · 3분</small><strong>배달비가 늘어난 건<br>횟수보다 ‘이날’ 때문이에요.</strong><p>비교 기준을 확인하고 다음 달 알림을 설정해 보세요.</p></div><ul><li>생활 장면으로 공감을 구체화</li><li>근거와 행동을 같은 화면에 연결</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sprint" class="sprint section">
+      <div class="section-head"><div><p class="chapter">05 · LEARN FAST</p><h2>빠르게 만든 것이 아니라,<br>빠르게 배워 고쳤습니다.</h2></div><p class="section-note">3일 안에 모르는 것을 확인하고 판단을 수정한 작업 기록입니다.</p></div>
+      <ol class="sprint-line">
+        <li><span>DAY 1</span><h3>신호 수집</h3><p>가계지출, 플랫폼의 정보 이용, 콘텐츠 깊이 관련 공식 자료를 확인했습니다.</p><strong>배운 점</strong><small>생활비 관심과 정보 신뢰를 하나의 캠페인 문제로 연결할 수 있었습니다.</small></li>
+        <li><span>DAY 2</span><h3>메시지 제작</h3><p>‘절약하세요’에서 ‘흐름부터 보세요’로 브랜드의 역할을 다시 정의했습니다.</p><strong>바꾼 점</strong><small>훈계하는 메시지 대신 사용자가 스스로 이해하는 구조를 선택했습니다.</small></li>
+        <li><span>DAY 3</span><h3>VOC 반영</h3><p>가상 반응의 공감·근거·행동 요구를 분리하고 2차 콘텐츠를 제작했습니다.</p><strong>남은 질문</strong><small>실제 표본에서도 근거 보기와 다음 행동이 신뢰를 높이는지 검증해야 합니다.</small></li>
+      </ol>
+    </section>
+
+    <section class="role section">
+      <p class="chapter">06 · MY ROLE</p>
+      <div class="role-grid"><div><h2>제가 한 일과<br>하지 않은 일을 분명히 했습니다.</h2><p>기획 능력은 과장된 성과가 아니라 판단의 근거와 한계를 투명하게 보여주는 데서 드러난다고 생각했습니다.</p></div><dl><div><dt>직접 수행</dt><dd>퍼짐 도구, 트렌드 리서치, 메시지 전략, 채널별 소재 기획, VOC 구조, 웹 프로토타입</dd></div><div><dt>시뮬레이션</dt><dd>캠페인, VOC 12건, 1차·2차 콘텐츠 반응</dd></div><div><dt>수행하지 않음</dt><dd>실제 토스 프로젝트, 광고 집행, 고객 조사, 토스 내부 협업</dd></div><div><dt>다음 검증</dt><dd>실제 콘텐츠 표본과 행동 지표로 메시지 가설 확인</dd></div></dl></div>
+    </section>
+
+    <section class="closing section">
+      <p class="kicker">TREND → BRAND → CONTENT → VOC → NEXT</p>
+      <h2>브랜드의 말을 만들고,<br>사람의 반응으로 다시 씁니다.</h2>
+      <div><span>Brand Marketing Portfolio</span><span>개인 프로젝트 · 2026.10</span></div>
+    </section>
+  </main>
+  <footer><strong>TREND TO TRUST</strong><span>Integrated Portfolio v03</span></footer>
+  <script src="./portfolio.js"></script>
+</body>
+</html>
