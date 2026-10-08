@@ -2,12 +2,12 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import {accountURL,parseFeed,parseTrends,meta,strip} from './strategy.mjs';
-import {parseGoogleNews,selectNews,naverWindow,summarizeNaver,normalizeYouTube} from './trend-evidence.mjs';
+import {accountURL,parseFeed,parseTrends,meta,strip} from './src/strategy.mjs';
+import {parseGoogleNews,selectNews,naverWindow,summarizeNaver,normalizeYouTube} from './src/trend-evidence.mjs';
 
 const root=path.dirname(fileURLToPath(import.meta.url));
 const feedURL='https://trends.google.com/trending/rss?geo=KR';
-const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.woff2':'font/woff2','.png':'image/png','.jpg':'image/jpeg','.json':'application/json; charset=utf-8','.zip':'application/zip'};
+const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.woff2':'font/woff2','.png':'image/png','.jpg':'image/jpeg','.json':'application/json; charset=utf-8','.zip':'application/zip','.pdf':'application/pdf','.md':'text/markdown; charset=utf-8','.xlsx':'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'};
 let trendCache=null;
 const evidenceCache=new Map();
 

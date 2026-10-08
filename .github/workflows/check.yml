@@ -9,5 +9,5 @@ jobs:
         with:
           node-version: '22'
       - run: npm test
-      - run: node --check guide.js
-      - run: node --check decision-ui.js
+      - run: node --check src/guide.js
+      - run: node --check src/decision-ui.js

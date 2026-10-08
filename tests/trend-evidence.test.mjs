@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {parseGoogleNews,selectNews,naverWindow,summarizeNaver,normalizeYouTube} from './trend-evidence.mjs';
+import {parseGoogleNews,selectNews,naverWindow,summarizeNaver,normalizeYouTube} from '../src/trend-evidence.mjs';
 
 test('Google 뉴스 RSS에서 제목과 원문을 읽는다', () => {
   const xml = '<rss><channel><item><title><![CDATA[봄 전시 소식]]></title><link>https://news.google.com/a</link><source>테스트뉴스</source><pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate></item></channel></rss>';
