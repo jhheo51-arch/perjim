@@ -4,7 +4,7 @@
 
 토스 Brand Marketing Specialist 직무를 목표로 만들었습니다. 신호를 확인하고, 브랜드 메시지와 채널별 콘텐츠를 만들고, 작은 사용자 검증을 거쳐 다음 문장을 수정하는 과정을 한 저장소에 담았습니다.
 
-**[웹 포트폴리오](https://jhheo51-arch.github.io/trend-to-trust/)** · **[완성 카드뉴스·뉴스레터](https://jhheo51-arch.github.io/trend-to-trust/campaign.html)** · **[메시지 검증](https://jhheo51-arch.github.io/trend-to-trust/message-check.html)** · **[학습 과정](https://jhheo51-arch.github.io/trend-to-trust/learning-board.html)**
+**[웹 포트폴리오](https://jhheo51-arch.github.io/trend-to-trust/)** , **[완성 카드뉴스,뉴스레터](https://jhheo51-arch.github.io/trend-to-trust/campaign.html)** , **[메시지 검증](https://jhheo51-arch.github.io/trend-to-trust/message-check.html)** , **[학습 과정](https://jhheo51-arch.github.io/trend-to-trust/learning-board.html)**
 
 ---
 
@@ -29,7 +29,7 @@
 | 항목 | 결과 | 현재 상태 |
 | --- | --- | --- |
 | 브랜드 캠페인 | 가계부 콘텐츠 〈한 달의 이유〉 | 기획, 카드 6장, 원고 제작 완료 |
-| 채널 설계 | Meta, YouTube·Google, 토스 온드 채널별 첫 장면과 행동 제안 | 포트폴리오용 제작안 |
+| 채널 설계 | Meta, YouTube,Google, 토스 온드 채널별 첫 장면과 행동 제안 | 포트폴리오용 제작안 |
 | 외부 파트너 | 어피티, 오늘의집, 캐릿을 역할 기준으로 비교 | 실제 접촉 전 제안서 |
 | 메시지 검증 | 문장 A/B를 익명 5명에게 제시 | 실제 소규모 검증 완료 |
 | 트렌드 근거 | Google Trends, NAVER 검색어 트렌드, YouTube, 뉴스 자료를 역할별로 확인 | 로컬 도구에서 확인, 일부 인증값 필요 |
@@ -81,7 +81,7 @@ NAVER 검색어 트렌드 자동 조회는 `.env.example`을 참고해 로컬 `.
 npm test
 ```
 
-자동 검사는 공개 자료의 확인 범위, 주소 처리, 통계 계산, 트렌드 근거 연결, 메시지 응답 저장과 문장 수정 흐름을 포함해 35개를 확인합니다. 마케팅 성과를 예측하거나 검증하는 검사는 아닙니다.
+자동 검사는 공개 자료의 확인 범위, 주소 처리, 통계 계산, 트렌드 근거 연결, 메시지 응답 저장과 문장 수정 흐름을 포함해 36개를 확인합니다. 마케팅 성과를 예측하거나 검증하는 검사는 아닙니다.
 
 ## 더 읽을 문서
 
@@ -93,4 +93,4 @@ npm test
 
 ## 다음 검증
 
-다음 단계는 2차안 “배달비 18% 증가, 야근한 화요일 4번이 원인이에요.”를 같은 방식으로 다시 확인하는 것입니다. 숫자만 먼저 제시한 문장과 숫자·이유를 함께 제시한 문장을 비교해, 이해도와 행동 의향이 실제로 달라지는지 확인합니다.
+다음 단계는 2차안 “배달비 18% 증가, 야근한 화요일 4번이 원인이에요.”를 같은 방식으로 다시 확인하는 것입니다. 숫자만 먼저 제시한 문장과 숫자,이유를 함께 제시한 문장을 비교해, 이해도와 행동 의향이 실제로 달라지는지 확인합니다.
