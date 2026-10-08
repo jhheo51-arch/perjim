@@ -247,6 +247,8 @@ body>footer{display:flex;justify-content:space-between;max-width:var(--max);marg
   .partner-evidence{min-height:auto}
   .translation-flow,.content-loop,.sprint-line{grid-template-columns:1fr}
   .translation-flow article,.content-loop div,.sprint-line li{border-right:0;border-bottom:1px solid var(--line)}
+  .translation-flow article{min-height:auto;padding-block:32px}
+  .translation-flow h3{margin:42px 0 0}
   .translation-flow article:last-child,.content-loop div:last-child,.sprint-line li:last-child{border-bottom:0}
   .iteration{grid-template-columns:1fr}
   .change-log{min-height:150px}
