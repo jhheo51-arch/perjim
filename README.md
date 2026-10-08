@@ -4,7 +4,7 @@
 
 토스 Brand Marketing Specialist 직무를 목표로 만들었습니다. 신호를 확인하고, 브랜드 메시지와 채널별 콘텐츠를 만들고, 작은 사용자 검증을 거쳐 다음 문장을 수정하는 과정을 한 저장소에 담았습니다.
 
-**[웹 포트폴리오](https://jhheo51-arch.github.io/trend-to-trust/)** , **[완성 카드뉴스,뉴스레터](https://jhheo51-arch.github.io/trend-to-trust/campaign.html)** , **[1차 검증](https://jhheo51-arch.github.io/trend-to-trust/message-check.html)** , **[2차 검증](https://jhheo51-arch.github.io/trend-to-trust/message-check-02.html)** , **[학습 과정](https://jhheo51-arch.github.io/trend-to-trust/learning-board.html)**
+**[웹 포트폴리오](https://jhheo51-arch.github.io/trend-to-trust/)** · **[검증 반영 카드 3장](https://jhheo51-arch.github.io/trend-to-trust/campaign-v02.html)** · **[기존 완성 카드 6장과 원고](https://jhheo51-arch.github.io/trend-to-trust/campaign.html)** · **[2차 검증 결과](docs/SECOND-MESSAGE-RESULT-2026-10-09-v01.md)** · **[학습 과정](https://jhheo51-arch.github.io/trend-to-trust/learning-board.html)**
 
 ---
 
@@ -12,15 +12,15 @@
 
 1. **어떤 신호를 읽었나요?** 생활비 부담, 돈을 이해하려는 맥락, 정보형 콘텐츠 소비 흐름을 공개 자료에서 확인했습니다.
 2. **브랜드에는 어떻게 연결했나요?** “토스는 내 돈을 쉽게 이해하도록 돕는다”는 역할을 가계부 콘텐츠 〈한 달의 이유〉로 번역했습니다.
-3. **만든 뒤에는 무엇을 배웠나요?** 실제 익명 5명에게 두 문장을 보여주고, 숫자를 먼저 제시한 문장이 쉽게 읽혔지만 근거와 이유가 더 필요하다는 반응을 다음 문장에 반영했습니다.
+3. **만든 뒤에는 무엇을 배웠나요?** 두 차례의 소규모 문장 비교에서 숫자의 명확성, 생활 맥락의 이해도, 실제 기능으로 오해할 위험을 따로 읽었습니다. 그 결과 첫 3장을 다시 만들었습니다.
 
 ## 먼저 보는 순서
 
 | 순서 | 볼 것 | 확인할 내용 |
 | --- | --- | --- |
 | 1 | [웹 포트폴리오](https://jhheo51-arch.github.io/trend-to-trust/) | 신호 → 해석 → 브랜드 메시지 → 채널 → 검증의 전체 흐름 |
-| 2 | [완성 콘텐츠](https://jhheo51-arch.github.io/trend-to-trust/campaign.html) | 카드뉴스 6장, 첫 뉴스레터, 7일 후 후속 원고, 게시글 문안 |
-| 3 | [메시지 검증 기록](docs/USER-MESSAGE-CHECK-2026-10-08-v01.md) | 실제 익명 5명의 A/B 선택과 문장 수정 근거 |
+| 2 | [검증 반영 첫 3장](https://jhheo51-arch.github.io/trend-to-trust/campaign-v02.html)과 [기존 완성 콘텐츠](https://jhheo51-arch.github.io/trend-to-trust/campaign.html) | 2차 결과로 수정한 첫 장, 이전 6장과 뉴스레터 원고 |
+| 3 | [1차](docs/USER-MESSAGE-CHECK-2026-10-08-v01.md)·[2차 메시지 검증](docs/SECOND-MESSAGE-RESULT-2026-10-09-v01.md) | 실제 익명 응답 각 5건과 제작물 수정 이유 |
 | 4 | [어피티 제휴 제안](docs/UPPITY-PROPOSAL-2026-10-08-v01.md) | 외부 파트너에게 제안할 가치와 실행 조건 |
 | 5 | [학습 과정 보드](https://jhheo51-arch.github.io/trend-to-trust/learning-board.html) | 가설 → 제작물 → 관찰 → 다음 결정의 연결 |
 
@@ -31,19 +31,19 @@
 | 브랜드 캠페인 | 가계부 콘텐츠 〈한 달의 이유〉 | 기획, 카드 6장, 원고 제작 완료 |
 | 채널 설계 | Meta, YouTube,Google, 토스 온드 채널별 첫 장면과 행동 제안 | 포트폴리오용 제작안 |
 | 외부 파트너 | 어피티, 오늘의집, 캐릿을 역할 기준으로 비교 | 실제 접촉 전 제안서 |
-| 메시지 검증 | 문장 A/B를 익명 5명에게 제시 | 실제 소규모 검증 완료 |
+| 메시지 검증 | 두 차례 문장 비교, 각 익명 응답 5건 | 실제 소규모 검증 완료. 같은 참여자인지는 미확인 |
 | 트렌드 근거 | Google Trends, NAVER 검색어 트렌드, YouTube, 뉴스 자료를 역할별로 확인 | 로컬 도구에서 확인, 일부 인증값 필요 |
-| 다음 수정 | 숫자와 생활 맥락을 함께 제시한 2차안 | [참여 화면](message-check-02.html) 준비 완료, 실제 응답 대기 |
+| 다음 수정 | 계산 가능한 숫자 → 내역 → 인물의 자기 설명 | [첫 3장 v02](campaign-v02.html) 제작, 해당 카드의 독자 검증 전 |
 
 ### 실제로 확인한 것과 포트폴리오용 제안
 
 | 구분 | 내용 |
 | --- | --- |
-| 실제로 확인한 것 | 공개 자료, 로컬 도구 동작, 자동 검사, 익명 5명의 메시지 선택과 정성 의견 |
+| 실제로 확인한 것 | 공개 자료, 로컬 도구 동작, 자동 검사, 1·2차 익명 응답 각 5건의 문장 평가 |
 | 포트폴리오용 제안 | 〈한 달의 이유〉 캠페인, 카드뉴스 배포, 제휴, 광고 집행 결과 |
 | 아직 주장하지 않는 것 | 실제 광고 성과, 파트너 협업 성사, 전체 고객의 반응, 토스 내부 업무 경험 |
 
-메시지 검증에서 문장 A(“배달비가 18% 늘었어요.”)는 5명 중 4명에게 먼저 선택됐고 평균 이해도는 4.6/5였습니다. 다섯 명 모두 숫자의 구성이나 원인을 더 알고 싶다고 적었습니다. 이 결과는 방향을 확인하는 작은 표본이며 전체 고객 반응이나 캠페인 성과를 뜻하지 않습니다.
+1차에서는 문장 A(“배달비가 18% 늘었어요.”)가 5명 중 4명에게 선택됐고, 다섯 명 모두 숫자의 구성이나 원인을 더 알고 싶다고 적었습니다. 2차에서는 생활 맥락을 붙인 B가 이해하기 쉬운 문장으로 3명에게 선택됐지만, 계속 볼 의향 평균은 A 4.8/5, B 3.2/5였습니다. B를 실제 기능으로 오해한 응답도 있었습니다. 비교 기준이 없는 ‘18% 증가’는 최종 카드에서 제외했습니다. 작은 표본의 문장 반응이며 캠페인 성과가 아닙니다.
 
 ## 저장소 구조
 
@@ -51,6 +51,7 @@
 trend-to-trust/
 ├── index.html                 # 제출용 웹 포트폴리오
 ├── campaign.html              # 카드뉴스와 뉴스레터 원고
+├── campaign-v02.html          # 2차 반응을 반영한 첫 3장 시안
 ├── message-check.html         # 1차 익명 메시지 A/B 검증 화면
 ├── message-check-02.html      # 2차 문장 비교 참여 화면
 ├── learning-board.html        # 가설과 수정 과정을 보여주는 화면
@@ -91,8 +92,9 @@ npm test
 - [캠페인 브리프](docs/CAMPAIGN-BRIEF-2026-10-08-v01.md): 브랜드 목표와 콘텐츠 제작 기준
 - [메시지 검증 기록](docs/USER-MESSAGE-CHECK-2026-10-08-v01.md): 실제 소규모 반응과 다음 테스트 설계
 - [2차 메시지 검증 설계](docs/SECOND-MESSAGE-CHECK-2026-10-08-v01.md): 후속 문장, 질문, 판단 범위
-- [제출 전 점검](docs/SUBMISSION-AUDIT-2026-10-08-v01.md): 제출물의 근거, 한계, 남은 검증
+- [2차 메시지 검증 결과](docs/SECOND-MESSAGE-RESULT-2026-10-09-v01.md): 5건의 실제 집계와 카드 수정 결정
+- [제출 전 점검 v02](docs/SUBMISSION-AUDIT-2026-10-09-v02.md): 2차 결과 반영 후 근거, 한계, 남은 검증
 
 ## 다음 검증
 
-다음 단계는 [2차 검증 화면](https://jhheo51-arch.github.io/trend-to-trust/message-check-02.html)에서 기존 A안과 “18% 늘어난 배달비, 야근한 화요일 4번을 함께 돌아봐요.”를 비교하는 것입니다. 각 문장의 이해도와 이어서 볼 의향, 실제 기능으로 오해하는지 확인합니다. 2차 응답은 아직 수집 전입니다.
+다음 단계는 수정한 [첫 3장 카드](campaign-v02.html)를 맥락 설명 없이 읽어보게 하고, 독자가 무엇을 이해했는지, 72,000원의 계산 근거를 찾았는지, 실제 토스 기능으로 오해하지 않았는지 확인하는 것입니다. 카드 자체의 반응은 아직 받지 않았습니다.

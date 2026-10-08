@@ -8,7 +8,8 @@
 | --- | --- |
 | [PRD.md](PRD.md) | 프로젝트가 해결하려는 문제, 대상, 화면과 검증 기준 |
 | [CASE-STUDY.md](CASE-STUDY.md) | 공개 신호, 캠페인 해석, 보조 도구의 역할을 구분한 사례 연구 |
-| [SUBMISSION-AUDIT-2026-10-08-v01.md](SUBMISSION-AUDIT-2026-10-08-v01.md) | 제출 전 확인한 근거와 남아 있는 한계 |
+| [SUBMISSION-AUDIT-2026-10-09-v02.md](SUBMISSION-AUDIT-2026-10-09-v02.md) | 2차 검증 반영 후 제출 근거와 남아 있는 한계 |
+| [SUBMISSION-AUDIT-2026-10-08-v01.md](SUBMISSION-AUDIT-2026-10-08-v01.md) | 이전 제출 점검 기록 |
 | [PROJECT-ROADMAP-2026-10-08-v01.md](PROJECT-ROADMAP-2026-10-08-v01.md) | 고도화 순서와 각 단계의 완료 기준 |
 
 ## 캠페인 제작용
@@ -24,7 +25,8 @@
 | 문서 | 내용 |
 | --- | --- |
 | [USER-MESSAGE-CHECK-2026-10-08-v01.md](USER-MESSAGE-CHECK-2026-10-08-v01.md) | 익명 5명의 메시지 A/B 선택, 정성 의견, 다음 테스트 문장 |
-| [SECOND-MESSAGE-CHECK-2026-10-08-v01.md](SECOND-MESSAGE-CHECK-2026-10-08-v01.md) | 2차 문장의 참여 화면과 판단 기준. 실제 응답은 아직 없음 |
+| [SECOND-MESSAGE-CHECK-2026-10-08-v01.md](SECOND-MESSAGE-CHECK-2026-10-08-v01.md) | 응답 수집 전의 2차 문장 비교 설계 |
+| [SECOND-MESSAGE-RESULT-2026-10-09-v01.md](SECOND-MESSAGE-RESULT-2026-10-09-v01.md) | 실제 익명 응답 5건의 집계, 해석, 카드 수정 결정 |
 
 ## 참고 파일
 

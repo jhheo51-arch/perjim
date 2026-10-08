@@ -214,6 +214,7 @@ button:active,.button:active{transform:translateY(1px)}
 .validation-reading article{min-height:278px;padding:28px;border-right:1px solid var(--line);display:flex;flex-direction:column}
 .validation-reading article:last-child{border-right:0}.validation-reading article.accent{background:var(--blue-soft)}
 .validation-reading h3{margin:auto 0 14px;font-size:26px;line-height:1.25;letter-spacing:-.035em}
+.validation-note{margin:20px 0 0;color:var(--sub);font-size:14px}.validation-note a{color:var(--blue);font-weight:800}
 .iteration{display:grid;grid-template-columns:1fr .34fr 1fr;gap:14px;margin-top:72px}
 .creative{padding:24px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
 .creative>span,.change-log>span{font-size:12px;font-weight:800;color:var(--blue)}
