@@ -1,11 +1,16 @@
+const htmlEntities = Object.freeze({
+  lt: '<',
+  gt: '>',
+  quot: '"',
+  '#39': "'",
+  apos: "'",
+  amp: '&'
+});
+
 const decode = value => String(value ?? '')
   .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
   .replace(/<[^>]+>/g, ' ')
-  .replace(/&lt;/g, '<')
-  .replace(/&gt;/g, '>')
-  .replace(/&quot;/g, '"')
-  .replace(/&#39;|&apos;/g, "'")
-  .replace(/&amp;/g, '&')
+  .replace(/&(lt|gt|quot|#39|apos|amp);/g, (_, entity) => htmlEntities[entity])
   .replace(/\s+/g, ' ')
   .trim();
 
