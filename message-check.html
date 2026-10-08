@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="한 달의 이유 메시지 검증 도구">
+  <title>한 달의 이유 — 메시지 검증</title>
+  <link rel="stylesheet" href="./message-check.css">
+</head>
+<body>
+  <header class="topbar"><a href="./index.html" class="brand">TREND TO TRUST</a><span>MESSAGE TEST · 01</span></header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">REAL USER CHECK · 5 RESPONSES</p>
+      <h1>어떤 문장이<br><em>더 이해되나요?</em></h1>
+      <p>‘한 달의 이유’ 첫 문장을 비교하는 익명 테스트입니다. 이름·연락처는 받지 않습니다. 한 기기에서 P01부터 P05까지 차례로 응답해 주세요.</p>
+      <aside><strong>이 테스트가 확인하는 것</strong><span>문장 선택 · 이해도 · 토스다움 · 다음 행동 의향</span></aside>
+    </section>
+
+    <section class="test-layout" aria-label="메시지 비교 테스트">
+      <form id="messageTestForm" class="form-card" novalidate>
+        <div class="field"><label for="participantId">참여자 번호</label><select id="participantId" name="participantId" required><option value="">선택하세요</option><option>P01</option><option>P02</option><option>P03</option><option>P04</option><option>P05</option></select></div>
+        <fieldset><legend>더 이해하기 쉬운 문장을 골라주세요.</legend>
+          <label class="message-option"><input type="radio" name="preferredMessage" value="A"><span class="letter">A</span><strong>배달비가 18% 늘었어요.</strong><small>숫자 중심 가계부</small></label>
+          <label class="message-option"><input type="radio" name="preferredMessage" value="B"><span class="letter">B</span><strong>배달비가 늘어난 건<br>야근한 화요일 때문이에요.</strong><small>이유를 설명하는 가계부</small></label>
+        </fieldset>
+        <div class="score-grid">
+          <fieldset><legend>문장이 이해되나요?</legend><div class="scale" data-name="clarity"></div></fieldset>
+          <fieldset><legend>토스답게 느껴지나요?</legend><div class="scale" data-name="tossLike"></div></fieldset>
+          <fieldset><legend>가계부를 보고 싶나요?</legend><div class="scale" data-name="actionIntent"></div></fieldset>
+        </div>
+        <div class="field"><label for="reason">고른 이유 <span>선택</span></label><textarea id="reason" name="reason" maxlength="500" placeholder="예: 숫자만 있어도 바로 이해돼요."></textarea></div>
+        <div class="field"><label for="friction">어색하거나 더 알고 싶은 점 <span>선택</span></label><textarea id="friction" name="friction" maxlength="500" placeholder="예: 비교 기준이 궁금해요."></textarea></div>
+        <p id="formNotice" class="notice" aria-live="polite">응답은 이 브라우저에만 저장됩니다.</p>
+        <button class="primary" type="submit">응답 저장하기</button>
+      </form>
+
+      <aside class="result-card">
+        <p class="eyebrow">CURRENT CHECK</p><h2>현재 응답 <span id="responseTotal">0</span>/5</h2>
+        <div class="choice-bars"><div><span>문장 A</span><strong id="countA">0명</strong><i><b id="barA"></b></i></div><div><span>문장 B</span><strong id="countB">0명</strong><i><b id="barB"></b></i></div></div>
+        <dl><div><dt>평균 이해도</dt><dd id="clarityResult">—</dd></div><div><dt>평균 토스다움</dt><dd id="tossLikeResult">—</dd></div><div><dt>평균 행동 의향</dt><dd id="actionResult">—</dd></div></dl>
+        <p id="decision" class="decision">응답을 5명까지 모은 뒤 문구를 판단합니다.</p>
+        <div class="result-actions"><button id="exportButton" type="button">결과 내려받기</button><button id="resetButton" class="danger" type="button">응답 초기화</button></div>
+        <p class="limit">5명은 방향을 보는 작은 표본입니다. 전체 고객 비율이나 성과로 해석하지 않습니다.</p>
+      </aside>
+    </section>
+  </main>
+  <script type="module" src="./message-check.js"></script>
+</body>
+</html>

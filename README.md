@@ -4,7 +4,7 @@
 
 토스 Brand Marketing Specialist 직무를 목표로 만든 개인 포트폴리오입니다. 브랜드 목적 → 생활 소재 → 완성 콘텐츠 → 파트너 제안 → 실제 반응 검증 계획을 연결했습니다. 퍼짐은 공개 자료의 확인 범위와 선택 이유를 남기는 보조 도구입니다.
 
-**[완성 카드뉴스·뉴스레터](https://jhheo51-arch.github.io/trend-to-trust/campaign.html)** · **[웹 포트폴리오 보기](https://jhheo51-arch.github.io/trend-to-trust/)** · **[통합 기획서](docs/PRD.md)** · **[사례와 근거](docs/CASE-STUDY.md)**
+**[완성 카드뉴스·뉴스레터](https://jhheo51-arch.github.io/trend-to-trust/campaign.html)** · **[웹 포트폴리오 보기](https://jhheo51-arch.github.io/trend-to-trust/)** · **[통합 기획서](docs/PRD.md)** · **[사례와 근거](docs/CASE-STUDY.md)** · **[메시지 검증 화면](https://jhheo51-arch.github.io/trend-to-trust/message-check.html)**
 
 ## 처음 오셨다면
 
@@ -13,7 +13,8 @@
 | 1. 전체 이야기 | [웹 포트폴리오](https://jhheo51-arch.github.io/trend-to-trust/)에서 공개 신호 → 브랜드 메시지 → 콘텐츠 수정의 흐름을 봅니다. 설치 없이 열 수 있습니다. |
 | 2. 판단 근거 | [사례 문서](docs/CASE-STUDY.md)에서 확인한 사실·캠페인 가설·가상 반응을 구분하고, [통합 기획서](docs/PRD.md)에서 선택 기준을 읽습니다. |
 | 3. 보조 도구 · 선택 | [퍼짐 화면](https://jhheo51-arch.github.io/trend-to-trust/tool.html)을 봅니다. **공개 주소는 화면 확인용이며, 공개 자료 수집 기능은 로컬 실행이 필요합니다.** |
-| 4. 직접 실행 | 아래 [실행하기](#실행하기)에 따라 내 컴퓨터에서 퍼짐을 실행하고 자동 검사를 확인합니다. |
+| 4. 메시지 검증 | [메시지 검증 화면](https://jhheo51-arch.github.io/trend-to-trust/message-check.html)은 기존 두 문장을 비교하는 별도 도구입니다. P01~P05 응답은 해당 브라우저에만 저장됩니다. 새 카드 전체의 효과 검증을 대신하지 않습니다. |
+| 5. 직접 실행 | 아래 [실행하기](#실행하기)에 따라 내 컴퓨터에서 퍼짐을 실행하고 자동 검사를 확인합니다. |
 
 ### 화면 미리보기
 
@@ -68,7 +69,7 @@
 
 ### 3. 판단을 남기는 검증 구조
 
-자동 검사 27개로 주소 처리, 공개 자료 해석, 미확인 정보 표시, 추천 범위와 통계 계산을 확인했습니다. 퍼짐은 캠페인 성과를 예측하는 도구가 아니라 자료의 출처와 선택 이유를 남기는 업무 도구입니다.
+도구 자동 검사 27개로 주소 처리, 공개 자료 해석, 미확인 정보 표시, 추천 범위와 통계 계산을 확인했습니다. 퍼짐은 캠페인 성과를 예측하는 도구가 아니라 자료의 출처와 선택 이유를 남기는 업무 도구입니다.
 
 ## 핵심 판단 사례
 
@@ -100,6 +101,8 @@
 - 통계·플랫폼 자료의 사실과 지원자가 내린 해석을 화면에서 구분했습니다.
 
 현재 구현의 동작 검증은 [GitHub 자동 검사 기록](https://github.com/jhheo51-arch/trend-to-trust/actions/workflows/check.yml)에서 확인할 수 있습니다. [제휴 후보 3곳 비교](docs/PARTNER-SHORTLIST-2026-10-08-v01.md)는 공개 자료를 바탕으로 작성했으며 실제 접촉·협업은 하지 않았습니다. 실제 사용자 5명 검증과 제출자 정보 보완은 [제출 전 점검](docs/SUBMISSION-AUDIT-2026-10-08-v01.md)에 남겨 두었습니다.
+
+전체 `npm test`에는 도구 검사 27개와 메시지 응답 검사 3개가 포함됩니다.
 
 ## 실행하기
 
@@ -147,6 +150,8 @@ npm test
 | [docs/UPPITY-PROPOSAL-2026-10-08-v01.md](docs/UPPITY-PROPOSAL-2026-10-08-v01.md) | 어피티 제휴 방안 비교와 실행 조건 |
 | [index.html](index.html) | Trend to Trust 포트폴리오 |
 | [tool.html](tool.html) | 퍼짐 공개 신호 분석 도구 |
+| [message-check.html](message-check.html) | 실제 사용자 5명 메시지 검증 화면 |
+| [docs/PROJECT-ROADMAP-2026-10-08-v01.md](docs/PROJECT-ROADMAP-2026-10-08-v01.md) | 고도화 우선순위와 완료 기준 |
 | [case.html](case.html) | 토스 머니북 공개 자료 분석 사례 |
 | [docs/PRD.md](docs/PRD.md) | 통합 프로젝트의 목적·구조·검증 기준 |
 | [docs/CASE-STUDY.md](docs/CASE-STUDY.md) | 캠페인과 도구 사례의 근거 구분 |
