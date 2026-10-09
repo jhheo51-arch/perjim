@@ -6,9 +6,9 @@
 
 | 자료 | 내용 |
 | --- | --- |
-| [5쪽 포트폴리오 PDF](submission/Trend-to-Trust-Brand-Marketing-2026-10-09.pdf) | 조사, 캠페인, 완성 콘텐츠, 채널, 문장 수정 |
-| [조사와 기능 확인 엑셀](submission/Trend-to-Trust-Signal-Checks-2026-10-09.xlsx) | 퍼짐의 공개 자료 확인 범위와 기능 기록. 광고 성과 자료는 아님 |
-| [제출 적합성 점검](submission/Portfolio-Assessment-2026-10-09.md) | 퍼짐 단독 소개와 현재 포트폴리오의 차이, 남은 증거 |
+| [5쪽 포트폴리오 PDF](submission/Trend-to-Trust-Brand-Marketing-Response-2026-10-09.pdf) | 조사, 캠페인, 채널, 완성 카드 반응과 수정 |
+| [제출용 검증 엑셀](submission/Trend-to-Trust-Validation-Evidence-2026-10-09.xlsx) | 기존 조사와 기능 기록, 완성 카드 익명 응답 5건과 수정 판단 |
+| [제출 적합성 점검](submission/Portfolio-Assessment-Final-Response-2026-10-09.md) | 직무 연결, 현재 증거와 남은 한계 |
 | [기획서](strategy/PRD.md) | 프로젝트 목적과 콘텐츠 흐름 |
 | [사례 연구](strategy/CASE-STUDY.md) | 확인한 사실과 캠페인 해석의 구분 |
 | [캠페인 제작 기준](strategy/CAMPAIGN-BRIEF-2026-10-09-v02.md) | 브랜드 목표와 표현 기준 |

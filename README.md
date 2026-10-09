@@ -7,11 +7,12 @@
 ## 먼저 볼 자료
 
 1. [웹 포트폴리오](https://jhheo51-arch.github.io/trend-to-trust/)에서 기획부터 수정까지의 과정을 볼 수 있습니다.
-2. [제출용 PDF](docs/submission/Trend-to-Trust-Brand-Marketing-2026-10-09.pdf)는 핵심 판단과 제작물을 5쪽으로 정리했습니다.
+2. [제출용 PDF](docs/submission/Trend-to-Trust-Brand-Marketing-Response-2026-10-09.pdf)는 완성 카드 반응 5건과 세 번째 카드 수정까지 5쪽으로 정리했습니다.
 3. [카드뉴스 6장과 원고](campaign-v04.html)에는 세 차례 반응 확인을 반영한 게시글, 첫 뉴스레터, 7일 뒤 후속 원고가 있습니다.
 4. [채널별 제작안](campaign-kit-v02.html)과 [어피티 제휴 제안](partner-proposal-v02.html)에는 형식, 역할, 확인할 지표와 협의할 조건을 적었습니다.
 5. [문장 검증 기록](docs/validation/SECOND-MESSAGE-RESULT-2026-10-09-v01.md)에서 수정 이유와 응답의 한계를 확인할 수 있습니다.
 6. [완성 카드 반응 결과](final-card-check.html)는 첫 3장에 대한 익명 응답 5건과 세 번째 카드의 수정 이유를 보여줍니다.
+7. [제출용 검증 엑셀](docs/submission/Trend-to-Trust-Validation-Evidence-2026-10-09.xlsx)은 익명 응답 원자료와 수정 판단을 기존 조사 기록에 추가했습니다.
 
 ## 무엇을 만들었나요?
 
