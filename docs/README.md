@@ -9,9 +9,9 @@
 | [5쪽 포트폴리오 PDF](submission/Trend-to-Trust-Brand-Marketing-Response-2026-10-09.pdf) | 조사, 캠페인, 채널, 완성 카드 반응과 수정 |
 | [제출용 검증 엑셀](submission/Trend-to-Trust-Validation-Evidence-2026-10-09.xlsx) | 기존 조사와 기능 기록, 완성 카드 익명 응답 5건과 수정 판단 |
 | [제출 적합성 점검](submission/Portfolio-Assessment-Final-Response-2026-10-09.md) | 직무 연결, 현재 증거와 남은 한계 |
-| [기획서](strategy/PRD.md) | 프로젝트 목적과 콘텐츠 흐름 |
+| [기획서](strategy/PRD-FINAL-RESPONSE-2026-10-09.md) | 프로젝트 목적, 콘텐츠 흐름과 현재 검증 상태 |
 | [사례 연구](strategy/CASE-STUDY.md) | 확인한 사실과 캠페인 해석의 구분 |
-| [캠페인 제작 기준](strategy/CAMPAIGN-BRIEF-2026-10-09-v02.md) | 브랜드 목표와 표현 기준 |
+| [캠페인 제작 기준](strategy/CAMPAIGN-BRIEF-FINAL-RESPONSE-2026-10-09.md) | 브랜드 목표, 표현 기준과 완성 카드 수정 |
 
 ## 채널과 검증 자료
 
@@ -27,4 +27,4 @@
 
 [완성 카드와 원고](../campaign-v04.html), [채널별 제작안](../campaign-kit-v02.html), [제휴 제안서](../partner-proposal-v02.html)는 공개 웹페이지로도 읽을 수 있습니다.
 
-`archive/`에는 이전 PDF와 기획서, 퍼짐 단독 소개를 보관했습니다. `media/`에는 화면 미리보기가 있고, `data/`에는 공개 토스 사례 화면에서 쓰는 자료가 있습니다. 이 파일들은 현재 캠페인의 광고 결과가 아닙니다.
+`archive/`에는 이전 제출물과 기획서, 퍼짐 단독 소개를 보관했습니다. `media/`에는 화면 미리보기가 있고, `data/`에는 공개 토스 사례 화면에서 쓰는 자료가 있습니다. 이 파일들은 현재 캠페인의 광고 결과가 아닙니다.
