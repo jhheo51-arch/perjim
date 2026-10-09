@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="한 달의 이유 완성 카드 첫 3장의 이해와 브랜드 인식을 확인하는 익명 반응 기록 화면입니다.">
+  <title>한 달의 이유, 완성 카드 반응 확인</title>
+  <link rel="stylesheet" href="./src/message-check.css">
+  <link rel="stylesheet" href="./src/final-card-check.css">
+</head>
+<body>
+  <header class="topbar"><a href="./index.html" class="brand">TREND TO TRUST</a><span>FINAL CARD CHECK</span></header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">완성 카드 반응 확인, 익명 5건</p>
+      <h1>카드 3장을 읽고<br><em>이해한 내용을 알려주세요.</em></h1>
+      <p>별도 설명 없이 아래 카드를 순서대로 읽어주세요. 이름과 연락처는 받지 않습니다.</p>
+      <aside><strong>확인하는 것</strong><span>금액의 계산 근거, 가상 사례 구분, 실제 기능 오해, 브랜드 역할과 계속 볼 의향을 확인합니다.</span></aside>
+    </section>
+
+    <section class="card-preview" aria-label="한 달의 이유 완성 카드 첫 3장">
+      <article class="preview-card cover">
+        <div class="card-top"><span>한 달의 이유</span><span>01 / 03</span></div>
+        <small>가상의 10월 기록</small>
+        <h2>4번의 저녁.<br><em>72,000원.</em></h2>
+        <p>숫자는 어디까지 말해줄까요?<br>그날의 이유도 함께 돌아봅니다.</p>
+        <footer>배달 주문 4건 × 18,000원. 실제 고객의 거래 내역이나 토스 기능의 결과가 아닙니다.</footer>
+      </article>
+      <article class="preview-card proof">
+        <div class="card-top"><span>한 달의 이유</span><span>02 / 03</span></div>
+        <h2>72,000원은<br><em>이렇게 나왔어요.</em></h2>
+        <div class="receipt"><span>10월 6일, 배달</span><b>18,000원</b><span>10월 13일, 배달</span><b>18,000원</b><span>10월 20일, 배달</span><b>18,000원</b><span>10월 27일, 배달</span><b>18,000원</b><span>4건 합계</span><b>72,000원</b></div>
+        <footer>비교할 전월 내역이 없어 증가율은 표시하지 않습니다.</footer>
+      </article>
+      <article class="preview-card reason">
+        <div class="card-top"><span>한 달의 이유</span><span>03 / 03</span></div>
+        <h2>그날은<br><em>왜 주문했을까요?</em></h2>
+        <blockquote>“화요일마다 일이 늦게 끝나서 저녁을 주문했어요.”</blockquote>
+        <p>가상 인물이 자기 생활을 돌아본 말입니다. 결제 내역이 야근을 알아낸 것은 아닙니다.</p>
+        <footer>실제 인터뷰가 아닌 이야기 설정입니다.</footer>
+      </article>
+    </section>
+
+    <section class="test-layout" aria-label="완성 카드 반응 입력">
+      <form id="finalCardForm" class="form-card" novalidate>
+        <div class="field"><label for="participantId">참여자 번호</label><select id="participantId" name="participantId" required><option value="">선택하세요</option><option>P01</option><option>P02</option><option>P03</option><option>P04</option><option>P05</option></select><p class="field-help">한 기기에서 5명까지 입력할 수 있습니다. 같은 번호를 다시 저장하면 해당 응답이 수정됩니다.</p></div>
+
+        <fieldset class="choice-field"><legend>72,000원은 어떻게 계산됐나요?</legend><div class="choice-list"><label><input type="radio" name="amountBasis" value="FOUR_X_18000"> 18,000원짜리 배달 4건의 합계</label><label><input type="radio" name="amountBasis" value="FOUR_X_72000"> 72,000원짜리 배달 4건의 합계</label><label><input type="radio" name="amountBasis" value="INCREASE_18"> 지난달보다 18% 늘어난 금액</label><label><input type="radio" name="amountBasis" value="UNSURE"> 잘 모르겠어요</label></div></fieldset>
+
+        <fieldset class="choice-field"><legend>카드 속 인물과 거래 내역은 무엇이라고 이해했나요?</legend><div class="choice-list"><label><input type="radio" name="storyType" value="FICTIONAL"> 설명을 위해 만든 가상 사례</label><label><input type="radio" name="storyType" value="REAL_DATA"> 실제 고객의 거래 내역과 인터뷰</label><label><input type="radio" name="storyType" value="UNSURE"> 잘 모르겠어요</label></div></fieldset>
+
+        <fieldset class="choice-field"><legend>토스가 거래 내역으로 야근 이유를 자동 분석한 기능처럼 느껴졌나요?</legend><div class="choice-list compact"><label><input type="radio" name="featureConfusion" value="YES"> 네</label><label><input type="radio" name="featureConfusion" value="NO"> 아니요</label><label><input type="radio" name="featureConfusion" value="UNSURE"> 잘 모르겠어요</label></div></fieldset>
+
+        <div class="score-grid final-scores"><fieldset><legend>카드 내용이 이해되나요?</legend><div class="scale" data-name="clarity"></div></fieldset><fieldset><legend>나머지 카드도 보고 싶나요?</legend><div class="scale" data-name="interest"></div></fieldset></div>
+
+        <fieldset class="choice-field"><legend>이 콘텐츠에서 토스는 어떤 브랜드처럼 느껴졌나요?</legend><div class="choice-list"><label><input type="radio" name="brandRole" value="EASY_UNDERSTANDING"> 돈을 쉽게 이해하도록 돕는 브랜드</label><label><input type="radio" name="brandRole" value="SPENDING_JUDGE"> 소비를 평가하고 줄이라고 말하는 브랜드</label><label><input type="radio" name="brandRole" value="AUTO_ANALYSIS"> 생활을 자동으로 추론하는 기술 브랜드</label><label><input type="radio" name="brandRole" value="UNSURE"> 잘 모르겠어요</label></div></fieldset>
+
+        <div class="field"><label for="impression">가장 기억에 남은 내용 <span>선택</span></label><textarea id="impression" name="impression" maxlength="500" placeholder="예: 18,000원 네 번의 합계가 바로 이해됐어요."></textarea></div>
+        <div class="field"><label for="confusing">헷갈리거나 바꾸면 좋을 부분 <span>선택</span></label><textarea id="confusing" name="confusing" maxlength="500" placeholder="예: 가상 사례라는 표시가 더 앞에 보이면 좋겠어요."></textarea></div>
+        <p id="formNotice" class="notice" aria-live="polite" tabindex="-1">응답은 이 브라우저에만 저장됩니다.</p>
+        <button class="primary" type="submit">응답 저장하기</button>
+      </form>
+
+      <aside class="result-card">
+        <p class="eyebrow">CURRENT CHECK</p><h2>현재 응답 <span id="responseTotal">0</span>/5</h2>
+        <dl data-final-result hidden><div><dt>계산 근거 이해</dt><dd id="amountResult">—</dd></div><div><dt>가상 사례 구분</dt><dd id="fictionResult">—</dd></div><div><dt>기능 오해</dt><dd id="confusionResult">—</dd></div><div><dt>목표 브랜드 역할</dt><dd id="brandResult">—</dd></div><div><dt>이해도 평균</dt><dd id="clarityResult">—</dd></div><div><dt>계속 볼 의향</dt><dd id="interestResult">—</dd></div></dl>
+        <p id="decision" class="decision">5건이 모이기 전에는 결과를 표시하지 않습니다.</p>
+        <div class="result-actions"><button id="exportButton" type="button">결과 내려받기</button><button id="resetButton" class="danger" type="button">응답 초기화</button></div>
+        <p class="limit">5건은 다음 수정 방향을 찾는 작은 표본입니다. 전체 고객의 의견이나 캠페인 성과로 해석하지 않습니다.</p>
+      </aside>
+    </section>
+    <p class="back-link"><a href="./campaign-v03.html">완성 카드 6장으로 돌아가기</a></p>
+  </main>
+  <script type="module" src="./src/final-card-check.js"></script>
+</body>
+</html>
