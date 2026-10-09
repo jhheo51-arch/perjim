@@ -40,6 +40,8 @@ Meta용 카드와 게시글 문안은 작성했습니다. YouTube와 Google용 �
 
 ## 파일 찾기
 
+현재 공개본은 [웹 포트폴리오](index.html), [카드뉴스와 원고](campaign-v04.html), [채널별 제작안](campaign-kit-v02.html), [제휴 제안](partner-proposal-v02.html), [완성 카드 반응 결과](final-card-check.html)입니다. 파일명에 번호가 없거나 이전 번호가 남은 HTML은 기존 공개 주소와 수정 과정을 보존한 파일입니다. 현재 제출 순서는 [문서 안내](docs/README.md)에서 확인할 수 있습니다.
+
 | 위치 | 내용 |
 | --- | --- |
 | 저장소 첫 화면의 HTML 파일 | 웹 포트폴리오와 공개된 제작물. 기존 공개 주소를 유지합니다. |
