@@ -1,0 +1,81 @@
+{
+  "testId": "trend-to-trust-final-card-check",
+  "exportedAt": "2026-10-09T05:32:02.637Z",
+  "correctAnswers": {
+    "amountBasis": "FOUR_X_18000",
+    "storyType": "FICTIONAL",
+    "brandRole": "EASY_UNDERSTANDING"
+  },
+  "responses": [
+    {
+      "participantId": "P01",
+      "amountBasis": "FOUR_X_18000",
+      "storyType": "FICTIONAL",
+      "featureConfusion": "YES",
+      "brandRole": "SPENDING_JUDGE",
+      "clarity": 5,
+      "interest": 3,
+      "impression": "그날 왜 주문했을까요라고 분석한 내용",
+      "confusing": "",
+      "submittedAt": "2026-10-09T05:28:39.042Z"
+    },
+    {
+      "participantId": "P02",
+      "amountBasis": "FOUR_X_18000",
+      "storyType": "FICTIONAL",
+      "featureConfusion": "UNSURE",
+      "brandRole": "AUTO_ANALYSIS",
+      "clarity": 4,
+      "interest": 4,
+      "impression": "만 8천원 4번의 합계인 것이 바로 이해갔다",
+      "confusing": "가상사례 표시가 한 눈에 보이면 좋겠다",
+      "submittedAt": "2026-10-09T05:29:36.954Z"
+    },
+    {
+      "participantId": "P03",
+      "amountBasis": "FOUR_X_18000",
+      "storyType": "FICTIONAL",
+      "featureConfusion": "YES",
+      "brandRole": "AUTO_ANALYSIS",
+      "clarity": 5,
+      "interest": 2,
+      "impression": "",
+      "confusing": "",
+      "submittedAt": "2026-10-09T05:29:56.722Z"
+    },
+    {
+      "participantId": "P04",
+      "amountBasis": "FOUR_X_18000",
+      "storyType": "FICTIONAL",
+      "featureConfusion": "YES",
+      "brandRole": "AUTO_ANALYSIS",
+      "clarity": 5,
+      "interest": 3,
+      "impression": "배달 관련하여 분석한 내용",
+      "confusing": "없음",
+      "submittedAt": "2026-10-09T05:30:49.123Z"
+    },
+    {
+      "participantId": "P05",
+      "amountBasis": "FOUR_X_18000",
+      "storyType": "FICTIONAL",
+      "featureConfusion": "YES",
+      "brandRole": "AUTO_ANALYSIS",
+      "clarity": 5,
+      "interest": 3,
+      "impression": "분석내용",
+      "confusing": "없음",
+      "submittedAt": "2026-10-09T05:31:08.290Z"
+    }
+  ],
+  "summary": {
+    "total": 5,
+    "correctAmount": 5,
+    "fictionalStory": 5,
+    "featureConfusionYes": 4,
+    "featureConfusionUnsure": 1,
+    "intendedBrandRole": 0,
+    "clarity": 4.8,
+    "interest": 3
+  }
+}

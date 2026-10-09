@@ -23,7 +23,8 @@
 | [두 번째 검증 설계](validation/SECOND-MESSAGE-CHECK-2026-10-08-v01.md) | 질문과 비교 조건 |
 | [두 번째 검증 결과](validation/SECOND-MESSAGE-RESULT-2026-10-09-v01.md) | 익명 응답 5건과 카드 수정 이유 |
 | [완성 카드 반응 확인 설계](validation/FINAL-CARD-CHECK-2026-10-09.md) | 첫 3장의 계산 이해, 가상 사례 구분, 기능 오해와 브랜드 인식 확인 |
+| [완성 카드 반응 결과](validation/FINAL-CARD-RESULT-2026-10-09-v01.md) | 익명 응답 5건, 반복된 기능 오해와 세 번째 카드 수정 이유 |
 
-[완성 카드와 원고](../campaign-v03.html), [채널별 제작안](../campaign-kit-v02.html), [제휴 제안서](../partner-proposal-v02.html)는 공개 웹페이지로도 읽을 수 있습니다.
+[완성 카드와 원고](../campaign-v04.html), [채널별 제작안](../campaign-kit-v02.html), [제휴 제안서](../partner-proposal-v02.html)는 공개 웹페이지로도 읽을 수 있습니다.
 
 `archive/`에는 이전 PDF와 기획서, 퍼짐 단독 소개를 보관했습니다. `media/`에는 화면 미리보기가 있고, `data/`에는 공개 토스 사례 화면에서 쓰는 자료가 있습니다. 이 파일들은 현재 캠페인의 광고 결과가 아닙니다.
