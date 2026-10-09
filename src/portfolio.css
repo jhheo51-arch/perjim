@@ -77,6 +77,9 @@ button:active,.button:active{transform:translateY(1px)}
 .split-heading>p,.section-heading>p{margin:0;color:var(--sub);font-size:17px}
 .section-heading h2 em{color:var(--blue);font-style:normal}
 .content-system{padding-top:130px}
+.content-system .section-heading{grid-template-columns:1fr;gap:24px}
+.content-system .section-heading h2{word-break:keep-all;overflow-wrap:normal;text-wrap:balance}
+.content-system .section-heading>p{max-width:720px}
 .episode-grid{display:grid;grid-template-columns:1.25fr .75fr .75fr;gap:14px;margin-top:56px}
 .episode-card{min-height:380px;padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;display:flex;flex-direction:column}
 .episode-card.feature{background:var(--blue);color:#fff;border-color:var(--blue)}
