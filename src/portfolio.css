@@ -37,8 +37,8 @@ button:active,.button:active{transform:translateY(1px)}
 .topbar nav{display:flex;gap:26px;margin-left:auto}
 .topbar nav a{font-size:14px;font-weight:600;color:var(--sub);text-decoration:none}
 .topbar nav a:hover{color:var(--blue)}
-.print-button,.button{min-height:48px;padding:0 20px;border:1px solid var(--ink);border-radius:14px;background:transparent;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;transition:background-color .2s,color .2s,border-color .2s}
-.print-button:hover,.button.secondary:hover{background:var(--ink);color:#fff}
+.button{min-height:48px;padding:0 20px;border:1px solid var(--ink);border-radius:14px;background:transparent;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;transition:background-color .2s,color .2s,border-color .2s}
+.button.secondary:hover{background:var(--ink);color:#fff}
 .button.primary{background:var(--blue);border-color:var(--blue);color:#fff}
 .button.primary:hover{background:#0056dc}
 .button.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
@@ -279,7 +279,6 @@ body>footer{display:flex;justify-content:space-between;max-width:var(--max);marg
 @media(max-width:600px){
   .page-section{padding:78px 20px}
   .topbar{min-height:64px;padding:0 20px}
-  .print-button{min-height:44px;padding-inline:14px;font-size:13px}
   .hero{min-height:auto;padding-top:56px}
   .hero-copy h1{font-size:52px}
   .hero-copy,.lead{width:100%;max-width:100%}
