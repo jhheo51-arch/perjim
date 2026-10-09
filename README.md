@@ -1,6 +1,6 @@
 # Trend to Trust
 
-토스 Brand Marketing Specialist 지원을 위해 만든 개인 프로젝트입니다. 공개 자료를 읽고 가계부 콘텐츠 **〈한 달의 이유〉**를 기획했습니다. 문장 검증에서 받은 응답을 반영해 카드뉴스 6장과 원고를 고쳤습니다.
+토스 Brand Marketing Specialist 지원을 위해 만든 개인 프로젝트입니다. 공개 자료를 읽고 가계부 콘텐츠 **〈한 달의 이유〉**를 기획했습니다. 문장 비교 2회와 완성 카드 반응 확인에서 받은 응답을 반영해 카드뉴스 6장과 원고를 고쳤습니다.
 
 **직접 한 일:** 자료 조사, 캠페인 기획, 카피와 카드 제작, 채널별 제작안, 제휴 제안서, 응답 분석, 웹 구현. 토스의 승인이나 의뢰를 받은 프로젝트는 아닙니다.
 
@@ -48,11 +48,11 @@ Meta용 카드와 게시글 문안은 작성했습니다. YouTube와 Google용 �
 | `assets/` | 카드 이미지와 글꼴 |
 | `docs/submission/` | 제출용 PDF, 엑셀, 현재 점검 |
 | `docs/strategy/` | 기획서, 사례 연구, 캠페인과 제휴 판단 |
-| `docs/validation/` | 두 차례 문장 검증 기록 |
+| `docs/validation/` | 두 차례 문장 검증과 완성 카드 반응 기록 |
 | `docs/archive/` | 이전 제출물과 퍼짐 단독 소개 |
-| `scripts/` | PDF 생성 코드 |
+| `scripts/` | PDF와 엑셀 생성 코드 |
 
-[문서별 안내](docs/README.md)와 [제출 적합성 점검](docs/submission/Portfolio-Assessment-2026-10-09.md)도 볼 수 있습니다. 이전 제작물은 삭제하지 않고 보관했습니다.
+[문서별 안내](docs/README.md)와 [제출 적합성 점검](docs/submission/Portfolio-Assessment-Final-Response-2026-10-09.md)도 볼 수 있습니다. 이전 제작물은 삭제하지 않고 보관했습니다.
 
 ## 로컬 실행
 

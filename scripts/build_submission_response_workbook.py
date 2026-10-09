@@ -8,7 +8,7 @@ from openpyxl.styles import Alignment, Font, PatternFill
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "docs/submission/Trend-to-Trust-Signal-Checks-2026-10-09.xlsx"
+SOURCE = ROOT / "docs/archive/Trend-to-Trust-Signal-Checks-2026-10-09-previous.xlsx"
 RESULT = ROOT / "docs/validation/final-card-check-results-2026-10-09-v01.json"
 OUTPUT = ROOT / "docs/submission/Trend-to-Trust-Validation-Evidence-2026-10-09.xlsx"
 
@@ -42,7 +42,7 @@ for sheet in workbook.worksheets:
     for row in sheet.iter_rows():
         for cell in row:
             if isinstance(cell.value, str) and not cell.value.startswith("="):
-                for mark in ("·", "•", "‧", "ㆍ"):
+                for mark in (chr(183), "•", "‧", "ㆍ"):
                     cell.value = cell.value.replace(mark, ", ")
 
 data = json.loads(RESULT.read_text(encoding="utf-8"))
